@@ -1,0 +1,1204 @@
+﻿@import url(https://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
+@import url(https://fonts.googleapis.com/earlyaccess/dhyana.css);
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabicnaskh.css);
+@import url(https://fonts.googleapis.com/earlyaccess/droidsansethiopic.css);
+@import url(https://fonts.googleapis.com/earlyaccess/droidsanstamil.css);
+
+
+@font-face {
+    font-family: "BarCode39Normal";
+    src: url("./fonts/BAR39.eot"); /* IE9 Compat Modes */
+    src: url("./fonts/BAR39.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../Fonts/barcode/BAR39.otf") format("opentype"), /* Open Type Font */
+    url("../Fonts/barcode/BAR39.svg") format("svg"), /* Legacy iOS */
+    url("../Fonts/barcode/BAR39.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../Fonts/barcode/BAR39.woff") format("woff"), /* Modern Browsers */
+    url("../Fonts/barcode/BAR39.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.barcode {
+    font-family: 'BarCode39Normal';
+    font-size: 35pt;
+    text-align: center;
+    color: #000;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.Header {
+    width: 100%;
+    height: 127px;
+    background-color: #2C3E50;
+    direction: rtl;
+    border-bottom: 7px solid #F0C419;
+}
+
+.LTR { direction: ltr; }
+
+.LogoDiv {
+    float: right;
+}
+
+.LangDiv {
+    float: left;
+    padding: 10px;
+}
+
+.LangBtn {
+    font-size: 10pt !important;
+    height: 24px !important;
+    width: 50px;
+}
+
+.LogoDiv_En {
+    float: left;
+}
+
+.LangDiv_En {
+    float: right;
+    padding: 10px;
+}
+
+.HeaderLogo {
+    width: 430px;
+    height: 93px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    margin-right: 30px;
+}
+
+.Header_En {
+    width: 100%;
+    height: 127px;
+    background-color: #2C3E50;
+    direction: ltr;
+    border-bottom: 7px solid #F0C419;
+}
+
+.HeaderLogo_En {
+    width: 361px;
+    height: 96px;
+    margin-top: 15px;
+    margin-bottom: 16px;
+    margin-left: 30px;
+}
+
+.InfoDiv {
+    direction: rtl;
+    background-color: #EDEFF4;
+    height: 60px;
+    padding: 2px 30px;
+    border-bottom: solid 1px #4D565F;
+}
+
+.InfoDiv_En {
+    direction: ltr;
+    background-color: #EDEFF4;
+    height: 60px;
+    padding: 2px 30px;
+    border-bottom: solid 1px #4D565F;
+}
+
+.NameDiv {
+    float: right;
+    padding: 4px 20px;
+    text-align: right;
+    width: 300px;
+    font-family: droid arabic kufi;
+    font-size: 10pt;
+}
+
+.MsgsDiv {
+    font-family: droid arabic kufi;
+    font-size: 10pt;
+    float: right;
+    text-align: right;
+}
+
+.NameDiv_En {
+    float: left;
+    padding: 4px 20px;
+    text-align: left;
+    width: 350px;
+    font-family: persans;
+    font-size: 15px;
+}
+
+.MsgsDiv_En {
+    font-family: persans;
+    font-size: 13px;
+    float: left;
+    text-align: left;
+}
+
+.mainContent {
+    /*overflow: visible;padding: 20px 30px 20px 10px;margin-right: 270px;*/
+    margin-right: 270px;
+    width: auto;    
+    font-family: droid arabic kufi !important;
+    font-size: 10pt !important;
+    color: #2C3E50 !important;
+    direction: rtl;
+}
+
+.mainContent_En {
+    /*overflow: hidden;
+    padding: 20px 10px 20px 30px;*/
+    margin-left: 270px;
+    width: auto;    
+    font-family: persans !important;
+    font-size: 11pt !important;
+    color: #2C3E50 !important;
+    direction: ltr;
+}
+
+.clear {
+    clear: both;
+}
+
+.Footer {
+    background-color: #2c3e50;
+    border-top: 7px solid #F0C419;
+    color: #FFFFFF;
+    direction: rtl;
+    font-family: Hacen_Tunisia;
+    font-size: 13px;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.Footer_En {
+    background-color: #2c3e50;
+    border-top: 7px solid #F0C419;
+    color: #FFFFFF;
+    direction: rtl;
+    font-family: persans;
+    font-size: 12px;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.menuDiv {
+    float: right;
+    width: 240px;
+    background-color: #2D3E50;
+    border-radius: 5px;
+    font-family: tahoma;
+    font-size: 13px;
+}
+
+.menuDiv_En {
+    float: Left;
+    width: 240px;
+    background-color: #2D3E50;
+    border-radius: 5px;
+    font-family: tahoma;
+    font-size: 13px;
+}
+
+.MainMenu {
+    width: 240px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .MainMenu li {
+        height: 30px;
+        border-bottom: 1px solid #4D565F;
+        position: relative;
+    }
+
+        .MainMenu li:last-child {
+            border-bottom: 0;
+        }
+
+        .MainMenu li a, .MainMenu li a:visited {
+            display: block;
+            height: 25px;
+            padding: 2px 10px 3px 10px;
+            color: #FFF;
+            text-decoration: none;
+            transition: all 0.2s ease 0s;
+        }
+
+.MenuFonts li a {
+    font-family: droid arabic kufi;
+    font-size: 13px;
+}
+
+.MenuFonts_En li a {
+    font-family: persans;
+    font-size: 14px;
+    height: 19px !important;
+    padding: 7px 10px !important;
+}
+
+.MainMenu li:first-child a:last-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.MainMenu li:last-child a:first-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.MainMenu li a:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: #F0C514;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+
+
+/*.MainMenu li:hover > div {
+    display: block;
+}*/
+
+
+
+/*****************************************************************/
+
+.arrow-in-main-menu {
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 8px solid #FFF;
+    height: 0;
+    position: absolute;
+    right: 225px;
+    top: 12px;
+    width: 0;
+}
+
+.arrow-beside_sub_menu {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 13px solid #2D3E50;
+}
+
+.arrow-in-main-menu_En {
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 8px solid #FFF;
+    height: 0;
+    position: absolute;
+    left: 220px;
+    top: 12px;
+    width: 0;
+    transform: rotate(180deg);
+}
+
+.arrow-beside_sub_menu_En {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 13px solid #2D3E50;
+    transform: rotate(180deg);
+}
+
+.ContainerSubMenu {
+    display: block;
+    min-height: 50px;
+    position: absolute;
+    right: 240px;
+    top: 0;
+    width: 280px;
+    display: none;
+}
+
+.ContainerSubMenu_En {
+    display: block;
+    min-height: 50px;
+    position: absolute;
+    left: 240px;
+    top: 0;
+    width: 280px;
+    display: none;
+}
+
+.ContainerSubMenu:hover + a {
+    background-color: #F0C514;
+    color: #000;
+}
+
+.ContainerSubMenu_En:hover + a {
+    background-color: #F0C514;
+    color: #000;
+}
+
+.ArrowSubMenu {
+    float: right;
+    padding-right: 5px;
+    padding-top: 9px;
+    width: 13px;
+}
+
+.ArrowSubMenu_En {
+    float: left;
+    padding-left: 7px;
+    padding-top: 9px;
+    width: 13px;
+}
+
+.SubMenuDiv {
+    float: right;
+    width: 260px;
+}
+
+.SubMenuDiv_En {
+    float: left;
+    width: 260px;
+}
+
+    .SubMenuDiv ul, .SubMenuDiv_En ul {
+        width: 260px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: #2D3E50;
+        display: block;
+        border-radius: 5px;
+    }
+
+        .SubMenuDiv ul li, .SubMenuDiv_En ul li {
+            height: 30px;
+            padding: 4px;
+            border: 0;
+        }
+
+
+            .SubMenuDiv ul li a, .SubMenuDiv li a:visited, .SubMenuDiv_En ul li a, .SubMenuDiv_En ul li a:visited {
+                display: block;
+                height: 25px;
+                padding: 2px 10px 3px 10px;
+                color: #FFF;
+                border-radius: 5px !important;
+                text-decoration: none;
+                cursor: pointer;
+                transition: all 0.2s ease 0s;
+            }
+
+                .SubMenuDiv ul li a:hover, .SubMenuDiv_En ul li a:hover {
+                    color: #000;
+                    text-decoration: none;
+                    background-color: #F0C514;
+                    transition: all 0.2s ease 0s;
+                }
+
+
+/***************************** Login *********************************/
+
+.ContentDiv {
+    width: 90%;
+    direction: rtl;
+    margin: 0 auto;
+}
+
+.ContentDiv_En {
+    width: 90%;
+    direction: ltr;
+    margin: 0 auto;
+}
+
+.NoteDiv {
+    border: solid 1px #F0C419;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.NoteTitle {
+    background-color: #F0C419;
+    width: 180px;
+    display: block;
+    text-align: center;
+    font-family: droid arabic kufi;
+    font-size: 11pt;
+    color: #000000;
+    padding: 2px;
+    border-radius: 0 10px;
+}
+
+.NoteTitle_En {
+    background-color: #F0C419;
+    width: 150px;
+    display: block;
+    text-align: center;
+    font-family: persans;
+    font-size: 12pt;
+    color: #000000;
+    padding: 2px;
+    border-radius: 10px 0;
+}
+
+.NoteDiv {
+    display: block;
+}
+
+.NoteSpanFont {
+    font-family: droid arabic kufi;
+    font-size: 11pt;
+    padding: 3px 10px;
+    display: block;
+    color: #2C3E50;
+}
+
+.NoteSpanFont_En {
+    font-family: persans;
+    font-size: 12pt;
+    padding: 5px 10px;
+    display: block;
+}
+
+.ImportantSpanFont {
+    font-size: 11pt;
+    font-family: droid arabic kufi;
+    text-align: center;
+    color: #2C3E50;
+    display: block;
+    padding: 5px;
+    /*border: solid 1px #ff0000; background-color: #fffacd;*/
+}
+
+.ImportantSpanFont_En {
+    font-size: 12pt;
+    font-family: persans;
+    text-align: center;
+    color: #2C3E50;
+    display: block;
+    padding: 10px;
+    /*border: solid 1px #ff0000; background-color: #fffacd;*/
+}
+
+.LoginDiv {
+    background-color: #2c3e50;
+    border-radius: 10px;
+    height: 300px;
+    margin-top: 20px;
+    width: 450px;
+    box-shadow: 1px 1px 15px #333;
+}
+
+.LoginTable {
+    width: 410px;
+    margin: 0px 20px;
+}
+
+.LoginTable_En {
+    width: 380px;
+    margin: 0px 20px;
+}
+
+.LoginTable TD {
+    text-align: right;
+    color: #FFFFFF;
+    font-family: droid arabic kufi;
+    font-size: 11pt;
+    height: 35px;
+}
+
+.LoginTable_En TD {
+    text-align: left;
+    color: #FFFFFF;
+    font-family: persans;
+    font-size: 12pt;
+    height: 35px;
+}
+
+.LoginTable TH {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: droid arabic kufi;
+    font-size: 12pt;
+    height: 65px;
+}
+
+.LoginTable_En TH {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: persans;
+    font-size: 14pt;
+     height: 65px;
+}
+
+.FooterLogin {
+    margin-top: -47px;
+}
+
+.Control_Textbox {
+    height: 25px;
+    border: solid 1px #F0C419;
+    border-radius: 5px;
+    background-color: #ECF0F1;
+    text-align: center;
+    font-family: persans;
+    font-size: 12pt;
+    color: #2C3E50;
+}
+
+.Control_Button_Login {
+    width: 350px;
+    height: 30px;
+    border: solid 1px #2C3E50;
+    border-radius: 5px;
+    background-color: #F0C419;
+    font-family: droid arabic kufi;
+    font-size: 11pt;
+    cursor: pointer;
+}
+
+.Control_Button {
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #F0C419;
+    font-family: droid arabic kufi;
+    font-size: 11pt;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    box-shadow: 1px 1px 7px #333;
+}
+
+    .Control_Button:hover {
+        transition: all 0.2s ease 0s;
+        background-color: #D5AE18;
+    }
+
+.Control_Button_En {
+    height: 30px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #F0C419;
+    font-family: persans;
+    font-size: 12pt;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    box-shadow: 1px 1px 7px #333;
+}
+
+    .Control_Button_En:hover {
+        transition: all 0.2s ease 0s;
+        background-color: #D5AE18;
+    }
+
+.Control_Label {
+    font-family: droid arabic kufi;
+    font-size: 11pt;
+    color: #2C3E50;
+}
+
+.Control_link, .Control_link:visited {
+    border-radius: 5px;
+    background-color: #F0C419;
+    font-family: droid arabic kufi;
+    font-size: 11pt;
+    color: #000000;
+    height: 24px;
+    padding: 3px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease 0s;
+}
+
+.Control_link_En, .Control_link_En:visited {
+    border-radius: 5px;
+    background-color: #F0C419;
+    font-family: persans;
+    font-size: 12pt;
+    color: #000000;
+    height: 24px;
+    padding: 3px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease 0s;
+}
+
+.Control_link:hover {
+    background-color: #D5AE18;
+    transition: all 0.2s ease 0s;
+}
+
+.Control_link_En:hover {
+    background-color: #D5AE18;
+    transition: all 0.2s ease 0s;
+}
+
+.Control_Label_En {
+    font-family: persans;
+    font-size: 12pt;
+    color: #2C3E50;
+}
+
+.LabelResults {
+    font-family: droid arabic kufi;
+    font-size: 11pt;
+    color: #2C3E50;
+}
+
+.LabelResults_En {
+    font-family: persans;
+    font-size: 12pt;
+    color: #2C3E50;
+}
+
+
+.LoginLinks {
+    display: block;
+    margin-top: 10px;
+    width: 600px;
+}
+
+    .LoginLinks a, .LoginLinks a:visited {
+        font-family: droid arabic kufi;
+        font-size: 11pt;
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+        .LoginLinks a:hover {
+            text-decoration: underline;
+        }
+
+.LoginLinks_En {
+    display: block;
+    margin-top: 10px;
+    width: 600px;
+}
+
+    .LoginLinks_En a, .LoginLinks_En a:visited {
+        font-family: persans;
+        font-size: 11pt;
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+        .LoginLinks_En a:hover {
+            text-decoration: underline;
+        }
+
+/***************************** Login *********************************/
+
+
+/***************************** Style DOM *********************************/
+
+.mainContent fieldset {
+    border: 2px solid #F0C419 !important;
+    /*position: relative !important;
+    padding-top: 40px !important;*/
+    border-radius: 5px !important;
+    min-height: 50px !important;
+    font-family: droid arabic kufi !important;
+    color: #2C3E50 !important;
+    font-size: 10pt !important;
+}
+
+.mainContent legend {
+    background-color: #F0C419 !important;
+    border: 2px solid #F0C419 !important;
+    border-radius: 5px !important;
+    padding: 5px !important;
+    /*margin-right: -12px;
+    margin-top: 30px;*/
+    font-family: droid arabic kufi !important;
+    font-size: 10pt !important;
+    font-weight: bold;
+    color: #2C3E50 !important;
+    width: auto;
+}
+
+.mainContent input[type="button"], .mainContent input[type="submit"] {
+    height: 30px !important;
+    border: 0 !important;
+    border-radius: 5px !important;
+    background-color: #F0C419 !important;
+    font-family: droid arabic kufi !important;
+    font-size: 10pt !important;
+    transition: all 0.2s ease 0s !important;
+    cursor: pointer !important;
+    box-shadow: 1px 1px 7px #333;
+    color: #000 !important;
+    min-width: 200px;
+}
+
+    .mainContent input[type="button"]:hover, .mainContent input[type="submit"]:hover {
+        transition: all 0.2s ease 0s !important;
+        background-color: #D5AE18 !important;
+    }
+
+.mainContent input[type="text"], .mainContent input[type="password"] {
+    height: 25px !important;
+    border: solid 1px #F0C419 !important;
+    border-radius: 5px !important;
+    background-color: #ECF0F1 !important;
+    text-align: center !important;
+    font-family: droid arabic kufi !important;
+    font-size: 10pt !important;
+    color: #2C3E50 !important;
+    min-width: 200px;
+}
+
+.mainContent textarea {
+    border: solid 1px #F0C419 !important;
+    border-radius: 5px !important;
+    background-color: #ECF0F1 !important;
+    text-align: center !important;
+    font-family: droid arabic kufi !important;
+    font-size: 10pt !important;
+    color: #2C3E50 !important;
+}
+
+.mainContent select {
+    min-height: 35px !important;
+    border: solid 1px #F0C419 !important;
+    border-radius: 5px !important;
+    background-color: #ECF0F1 !important;
+    font-family: droid arabic kufi !important;
+    font-size: 10pt !important;
+    color: #2C3E50 !important;
+    padding: 3px !important;
+    min-width: 200px;
+}
+
+.mainContent table[id^="ctl00_"] {
+    border: 0 !important;
+}
+
+    .mainContent table[id^="ctl00_"] tr th {
+        background-color: #2C3E50 !important;
+        color: #F0C419;
+        font-family: droid arabic kufi !important;
+        font-size: 10pt !important;
+        Height: 30px !important;
+        text-align: right !important;
+        border: 0 !important;
+        padding: 5px;
+    }
+
+    .mainContent table[id^="ctl00_"] tr td {
+        border: 0 !important;
+        text-align: right;
+        padding: 5px;
+    }
+
+    .mainContent table[id^="ctl00_"] tr:nth-child(2n) {
+        background-color: #FFD86C;
+        color: #2C3E50;
+        font-family: droid arabic kufi !important;
+        font-size: 10pt !important;
+        height: 30px !important;
+    }
+
+    .mainContent table[id^="ctl00_"] tr:nth-child(2n+1) {
+        background-color: #FCF6E7;
+        color: #2C3E50;
+        font-family: droid arabic kufi !important;
+        font-size: 10pt !important;
+        Height: 30px !important;
+        text-align: Center !important;
+    }
+
+    .mainContent table[id^="ctl00_"] tr td[colspan="8"] {
+        background-color: #FCFFFF !important;
+        color: #2C3E50;
+        font-family: droid arabic kufi !important;
+        font-size: 10pt !important;
+        height: 30px !important;
+    }
+
+    .mainContent table[id^="ctl00_"] input[type="button"], .mainContent table[id^="ctl00_"] input[type="submit"] {
+        height: 30px !important;
+        min-width: 30px;
+        border: solid 1px #2C3E50 !important;
+        border-radius: 5px !important;
+        background-color: #2C3E50 !important;
+        color: #F0C419 !important;
+        font-family: droid arabic kufi !important;
+        font-size: 10pt !important;
+        cursor: pointer !important;
+        transition: all 0.2s ease 0s !important;
+    }
+
+        .mainContent table[id^="ctl00_"] input[type="button"]:hover, .mainContent table[id^="ctl00_"] input[type="submit"]:hover {
+            background-color: #0D1D2D !important;
+            transition: all 0.2s ease 0s !important;
+        }
+
+    /*.mainContent table[id^="ctl00_"] tr:hover > td {
+        background-color: #CCC;
+    }*/
+
+
+.mainContent_En fieldset {
+    border: 2px solid #F0C419 !important;
+    /*position: relative !important;
+    padding-top: 40px !important;*/
+    border-radius: 5px !important;
+    min-height: 50px !important;
+    font-family: persans !important;
+    color: #2C3E50 !important;
+    font-size: 11pt !important;
+}
+
+.mainContent_En legend {
+    background-color: #F0C419 !important;
+    border: 2px solid #F0C419 !important;
+    border-radius: 5px !important;
+    padding: 5px !important;
+    /*margin-right: -12px;
+    margin-top: 30px;*/
+    font-family: persans !important;
+    font-size: 11pt !important;
+    font-weight: bold;
+    color: #2C3E50 !important;
+    width: auto;
+}
+
+.mainContent_En input[type="button"], .mainContent_En input[type="submit"] {
+    height: 30px !important;
+    border: 0 !important;
+    border-radius: 5px !important;
+    background-color: #F0C419 !important;
+    font-family: persans !important;
+    font-size: 11pt !important;
+    transition: all 0.2s ease 0s !important;
+    cursor: pointer !important;
+    box-shadow: 1px 1px 7px #333;
+    color: #000 !important;
+    min-width: 200px;
+}
+
+    .mainContent_En input[type="button"]:hover, .mainContent_En input[type="submit"]:hover {
+        transition: all 0.2s ease 0s !important;
+        background-color: #D5AE18 !important;
+    }
+
+.mainContent_En input[type="text"], .mainContent_En input[type="password"] {
+    height: 25px !important;
+    border: solid 1px #F0C419 !important;
+    border-radius: 5px !important;
+    background-color: #ECF0F1 !important;
+    text-align: center !important;
+    font-family: persans !important;
+    font-size: 11pt !important;
+    color: #2C3E50 !important;
+    min-width: 200px;
+}
+
+.mainContent_En textarea {
+    border: solid 1px #F0C419 !important;
+    border-radius: 5px !important;
+    background-color: #ECF0F1 !important;
+    text-align: center !important;
+    font-family: persans !important;
+    font-size: 11pt !important;
+    color: #2C3E50 !important;
+}
+
+.mainContent_En select {
+    min-height: 35px !important;
+    border: solid 1px #F0C419 !important;
+    border-radius: 5px !important;
+    background-color: #ECF0F1 !important;
+    font-family: persans !important;
+    font-size: 11pt !important;
+    color: #2C3E50 !important;
+    padding: 3px !important;
+    min-width: 200px;
+}
+
+.mainContent_En table[id^="ctl00_"] {
+    border: 0 !important;    
+}
+
+    .mainContent_En table[id^="ctl00_"] tr th {
+        background-color: #2C3E50;
+        color: #F0C419;
+        font-family: persans !important;
+        font-size: 11pt !important;
+        Height: 30px !important;
+        text-align: left !important;
+        border: 0 !important;
+        padding: 5px;
+    }
+
+    .mainContent_En table[id^="ctl00_"] tr td {
+        border: 0 !important;
+        text-align: left;
+        padding: 5px;
+    }
+
+    .mainContent_En table[id^="ctl00_"] tr:nth-child(2n) {
+        background-color: #FFD86C;
+        color: #2C3E50;
+        font-family: persans !important;
+        font-size: 11pt !important;
+        height: 30px !important;
+        text-align: left !important;
+    }
+
+    .mainContent_En table[id^="ctl00_"] tr:nth-child(2n+1) {
+        background-color: #FCF6E7;
+        color: #2C3E50;
+        font-family: persans !important;
+        font-size: 11pt !important;
+        Height: 30px !important;
+        text-align: left !important;
+    }
+
+    .mainContent_En table[id^="ctl00_"] tr td[colspan="8"] {
+        background-color: #FCFFFF;
+        color: #2C3E50;
+        font-family: persans !important;
+        font-size: 11pt !important;
+        height: 30px !important;
+    }
+
+    .mainContent_En table[id^="ctl00_"] input[type="button"], .mainContent_En table[id^="ctl00_"] input[type="submit"] {
+        height: 30px !important;
+        min-width: 30px;
+        border: solid 1px #2C3E50 !important;
+        border-radius: 5px !important;
+        background-color: #2C3E50 !important;
+        color: #F0C419 !important;
+        font-family: persans !important;
+        font-size: 11pt !important;
+        cursor: pointer !important;
+        transition: all 0.2s ease 0s !important;
+    }
+
+        .mainContent_En table[id^="ctl00_"] input[type="button"]:hover, .mainContent_En table[id^="ctl00_"] input[type="submit"]:hover {
+            background-color: #0D1D2D !important;
+            transition: all 0.2s ease 0s !important;
+        }
+
+    /*.mainContent_En table[id^="ctl00_"] tr:hover > td {
+        background-color: #CCC;
+    }*/
+
+.NotificationSpan {
+    background-color: #E7E8EA;
+    border: 1px solid #F0C419;
+    border-radius: 5px;
+    color: #F00;
+    font-weight: bold;
+    display: block;
+    font-family: droid arabic kufi;
+    font-size: 10pt;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: right;
+}
+
+.NotificationSpan_En {
+    background-color: #E7E8EA;
+    border: 1px solid #F0C419;
+    border-radius: 5px;
+    color: #F00;
+    font-weight: bold;
+    display: block;
+    font-family: persans;
+    font-size: 11pt;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: left;
+}
+
+
+.mainContent .Invoice {
+    border: 2px solid #2C3E50;
+    width: 600px;
+    font-size: 10pt;
+    margin: 0px auto;
+}
+
+    .mainContent .Invoice th {
+        border: 1px solid #2C3E50;
+        background-color: #CCC;
+        height: 30px;
+        text-align: center;
+        font-family: droid arabic kufi !important;
+        font-size: 10pt !important;
+    }
+
+    .mainContent .Invoice tr {
+        border: 1px solid #000;
+        width: 75%;
+    }
+
+    .mainContent .Invoice td {
+        border: 1px solid #000;
+        width: 25% !important;
+        text-align: center;
+        font-family: droid arabic kufi !important;
+        font-size: 10pt !important;
+    }
+
+.mainContent_En .Invoice {
+    border: 2px solid #2C3E50;
+    width: 600px;
+    font-size: 10pt;
+    margin: 0px auto;
+}
+
+    .mainContent_En .Invoice th {
+        border: 1px solid #2C3E50;
+        background-color: #CCC;
+        height: 30px;
+        text-align: center;
+        font-family: persans !important;
+        font-size: 10pt !important;
+    }
+
+    .mainContent_En .Invoice tr {
+        border: 1px solid #000;
+        width: 75%;
+    }
+
+    .mainContent_En .Invoice td {
+        border: 1px solid #000;
+        width: 25% !important;
+        text-align: center;
+        font-family: persans !important;
+        font-size: 10pt !important;
+    }
+
+.mainContent table#tableDDL {    
+    margin: 0;
+    border-width: 0px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 0;
+    vertical-align: top;
+    text-align: right;
+    direction: rtl;
+}
+
+    .mainContent table#tableDDL td {
+        width: 50%;
+        font-size: 10pt;
+        font-family: droid arabic kufi !important;
+        font-size: 10pt !important;
+        color: #2C3E50;
+    }
+
+.mainContent_En table#tableDDL {
+    
+    margin: 0;
+    border-width: 0px;
+    border-style: solid;
+    border-color: Gray;
+    padding: 0;
+    vertical-align: top;
+    text-align: right;
+    direction: rtl;
+}
+
+    .mainContent_En table#tableDDL td {
+        width: 50%;
+        font-size: 10pt;
+        font-family: persans !important;
+        font-size: 10pt !important;
+        color: #2C3E50;
+    }
+
+/***************************** Style DOM *********************************/
+
+
+
+
+/****************************** Fonts *******************************/
+
+@font-face {
+    font-family: GE_SS_TV_Bold;
+    src: url("../Fonts/EOT/GE_SS_TV_Bold.eot");
+    src: local('☺'), url("../Fonts/TTF/GE_SS_TV_Bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: GE_SS_Text_Medium;
+    src: url("../Fonts/EOT/GE_SS_Text_Medium.eot");
+    src: local('☺'), url("../Fonts/TTF/GE_SS_Text_Medium.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: GE_SS_Two_Light;
+    src: url("../Fonts/EOT/GE_SS_Two_Light.eot");
+    src: local('☺'), url("../Fonts/TTF/GE_SS_Two_Light.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: georgia;
+    src: url("../Fonts/EOT/georgia.eot");
+    src: local('☺'), url("../Fonts/TTF/georgia.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: georgia_bold;
+    src: url("../Fonts/EOT/georgia_bold.eot");
+    src: local('☺'), url("../Fonts/TTF/georgia_bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Hacen_Tunisia;
+    src: url("../Fonts/EOT/Hacen_Tunisia.eot");
+    src: local('☺'), url("../Fonts/TTF/Hacen_Tunisia.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Hacen_Tunisia_Bold;
+    src: url("../Fonts/EOT/Hacen_Tunisia_Bold.eot");
+    src: local('☺'), url("../Fonts/TTF/Hacen_Tunisia_Bold.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: persans;
+    src: url("../Fonts/EOT/persans.eot");
+    src: local('☺'), url("../Fonts/TTF/persans.ttf") format('truetype');
+}
+
+.top-header {
+    background: #2c3e50;
+    padding: 20px;
+}
+
+.site-div {
+    color: #fff;
+    font-size: 20pt;
+    font-family: droid arabic kufi;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+
+.site-div_En {
+    color: #fff;
+    font-size: 20pt;
+    font-family: persans;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.site-title a, .site-title a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+/****************************** Fonts *******************************/

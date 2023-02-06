@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://services.just.edu.jo/stuservices/student/reg/marks_en.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	Untitled Page
+</title>
+    <link href="./transcript_files/StyleSheet.css" rel="stylesheet" type="text/css">
+    <script src="./transcript_files/jquery.min.js.download" type="text/javascript"></script>
+    <script src="./transcript_files/jquery-ui.min.js.download" type="text/javascript"></script>
+    <link href="./transcript_files/jquery-ui.css" rel="stylesheet">
+
+    <style type="text/css">
+        .ui-dialog {
+            /* position: fixed;  for position pop up dialog center even if MaintainScrollPositionOnPostback="true" */
+        }
+
+        .ui-widget {
+            font-family: persans;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function () {
+            // force global dialog to be centered when MaintainScrollPositionOnPostback=True
+            $(window).scroll(function () {
+                $('#globalDialog').dialog('option', 'position', 'center');
+            });
+
+            $(".HasSubMenu").click(function () {
+                var subMenu = $(this).children().filter(".ContainerSubMenu_En");
+                $(".ContainerSubMenu_En").not(subMenu).hide();
+                $(subMenu).toggle();
+            });
+
+            $('#globalDialog').dialog(
+                {
+                    autoOpen: false,
+                    modal: true,
+                    width: 600,
+                    buttons:
+                    {
+                        'Ok': function () { $(this).dialog('close'); }
+                    },
+                    open: function (type, data) { $(this).parent().appendTo("form"); }
+                });
+        });
+
+        function showGlobalDialog(msg) {
+            $("#ctl00_lblGlobalDialogMessage").html(msg);
+            $('#globalDialog').dialog("open");
+        }
+    </script>
+    </head>
+<body data-new-gr-c-s-check-loaded="14.1062.0" data-gr-ext-installed="">
+    <form name="aspnetForm" method="post" action="https://services.just.edu.jo/stuservices/student/reg/marks_en.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEwOTEyNjgzMjMPZBYCZg9kFgICAw9kFhJmDxYCHgVWYWx1ZQULMjAxODAxNzUwMzlkAgQPDxYCHgRUZXh0BSdXZWxjb21lIEFNTUFSIEtIQUxFRCBBQkRFTCBMQVRJRiBTSEFOSVJkZAIFDw8WAh8BBRZTdHVkZW50IE51bWJlcjogMTM0MDI4ZGQCBg8PFgIfAQVGQWNhZGVtaWMgWWVhciBMZXZlbDogNCAvIFlvdXIgUmVnaXN0cmF0aW9uIFdpbGwgQmUgT24gMjItMDItMjAyMiAxMDozMGRkAggPDxYCHgdWaXNpYmxlZ2RkAgkPZBYUAgMPFgIfAmhkAhgPFgIfAmhkAjIPFgIeBXN0eWxlBQ1kaXNwbGF5Om5vbmU7ZAI6DxYCHwMFDWRpc3BsYXk6bm9uZTtkAk0PFgIfAwUOZGlzcGxheTpibG9jaztkAmMPFgIfAwUNZGlzcGxheTpub25lO2QCbQ8WAh8CaGQCdQ8WAh8DBQ1kaXNwbGF5Om5vbmU7ZAJ+DxYCHwMFDWRpc3BsYXk6bm9uZTtkApABDxYCHwMFDmRpc3BsYXk6YmxvY2s7ZAIKDxYCHwJoFgQCAw8WAh8CaGQCFw8WAh8DBQ5kaXNwbGF5OmJsb2NrO2QCCw9kFgQCAQ8PFgIfAmhkZAIDD2QWAgIBD2QWAmYPZBYEAgIPFgIeC18hSXRlbUNvdW50AgsWFmYPZBYIZg8VAU1Db3Vyc2VzIHRha2VuIGJ5IHRoZSBzdHVkZW50IHdpdGhpbiB0aGUgcHJvZ3JhbSBvZiBzdHVkZW50IGV4Y2hhbmdlIC0gRXJhc211c2QCAQ88KwARAwAPFgQeC18hRGF0YUJvdW5kZx8EAgNkARAWABYAFgAMFCsAABYCZg9kFgpmD2QWAgIEDw8WAh8CaGRkAgEPZBYQZg8PFgIfAQUHMTExMTAwMGRkAgEPDxYCHwEFBlAuVDEwMGRkAgIPDxYCHwEFRldlbGxuZXNzIEFuZCBMaWZlIFN0eWxlcyAoTm90IEZvciBQaHlzaWNhbCAmYW1wOyBPY2N1cGF0aW9uYWwgVGhlcmFweSlkZAIDDw8WAh8BBQEzZGQCBA8PFgQfAQUDICgpHwJoZGQCBQ8PFgIfAQUGJm5ic3A7ZGQCBg8PFgIfAQUGJm5ic3A7ZGQCBw8PFgIfAQUIRXhlbXB0ZWRkZAICD2QWEGYPDxYCHwEFBzE3NDQ4MjBkZAIBDw8WAh8BBQZDSXM0ODJkZAICDw8WAh8BBRNPcGVyYXRpb25zIFJlc2VhcmNoZGQCAw8PFgIfAQUBM2RkAgQPDxYEHwEFAyAoKR8CaGRkAgUPDxYCHwEFBiZuYnNwO2RkAgYPDxYCHwEFBiZuYnNwO2RkAgcPDxYCHwEFCEV4ZW1wdGVkZGQCAw9kFhBmDw8WAh8BBQcxNzQ0MjEwZGQCAQ8PFgIfAQUGQ0lzNDIxZGQCAg8PFgIfAQUVRGF0YWJhc2UgQXBwbGljYXRpb25zZGQCAw8PFgIfAQUBM2RkAgQPDxYEHwEFAyAoKR8CaGRkAgUPDxYCHwEFBiZuYnNwO2RkAgYPDxYCHwEFBiZuYnNwO2RkAgcPDxYCHwEFCEV4ZW1wdGVkZGQCBA8PFgIfAmhkFgICBA8PFgIfAmhkZAIDDxYCHwJoFgJmDxUEATABMAE5EElOIEdPT0QgU1RBTkRJTkdkAgUPZBYCZg8VBAEwATAAEElOIEdPT0QgU1RBTkRJTkdkAgEPZBYIZg8VAUJFeGVtcHRlZCBDb3Vyc2VzIGZvciBPYnRhaW5pbmcgUGFzcyBHcmFkZSBpbiB0aGUgUHJvZmljaWVuY3kgVGVzdHNkAgEPPCsAEQMADxYEHwVnHwQCAmQBEBYAFgAWAAwUKwAAFgJmD2QWCGYPZBYCAgQPDxYCHwJoZGQCAQ9kFhBmDw8WAh8BBQcyNTEwOTkwZGQCAQ8PFgIfAQUFTEcwOTlkZAICDw8WAh8BBSJFbmdsaXNoIExhbmd1YWdlIChSZW1lZGlhbCBDb3Vyc2UpZGQCAw8PFgIfAQUBM2RkAgQPDxYEHwEFBiZuYnNwOx8CaGRkAgUPDxYCHwEFBiZuYnNwO2RkAgYPDxYCHwEFBiZuYnNwO2RkAgcPDxYCHwEFCEV4ZW1wdGVkZGQCAg9kFhBmDw8WAh8BBQcxNzQwOTkwZGQCAQ8PFgIfAQUGQ0lzMDk5ZGQCAg8PFgIfAQUhQ29tcHV0ZXIgU2tpbGxzIChSZW1lZGlhbCBDb3Vyc2UpZGQCAw8PFgIfAQUBM2RkAgQPDxYEHwEFBiZuYnNwOx8CaGRkAgUPDxYCHwEFBiZuYnNwO2RkAgYPDxYCHwEFBiZuYnNwO2RkAgcPDxYCHwEFCEV4ZW1wdGVkZGQCAw8PFgIfAmhkFgICBA8PFgIfAmhkZAIDDxYCHwJoFgJmDxUEATABMAE2EElOIEdPT0QgU1RBTkRJTkdkAgUPZBYCZg8VBAEwATAAEElOIEdPT0QgU1RBTkRJTkdkAgIPZBYIZg8VARhGaXJzdCBTZW1lc3RlciAyMDE4LTIwMTlkAgEPPCsAEQMADxYEHwVnHwQCBGQBEBYAFgAWAAwUKwAAFgJmD2QWDGYPZBYCAgQPDxYCHwJoZGQCAQ9kFhBmDw8WAh8BBQY5MjEwMTBkZAIBDw8WAh8BBQZQSFkxMDFkZAICDw8WAh8BBRRHZW5lcmFsICBQaHlzaWNzICgxKWRkAgMPDxYCHwEFATNkZAIEDw8WBB8BBQkgNC4wMCAoQSkfAmhkZAIFDw8WAh8BBQUgNC4wMGRkAgYPDxYCHwEFAUFkZAIHDw8WAh8BBQRQYXNzZGQCAg9kFhBmDw8WAh8BBQY5MDEwMTBkZAIBDw8WAh8BBQdNQVRIMTAxZGQCAg8PFgIfAQUKQ2FsY3VsdXMgSWRkAgMPDxYCHwEFATNkZAIEDw8WBB8BBQkgNC4wMCAoQSkfAmhkZAIFDw8WAh8BBQUgNC4wMGRkAgYPDxYCHwEFAUFkZAIHDw8WAh8BBQRQYXNzZGQCAw9kFhBmDw8WAh8BBQcxNzMxMDExZGQCAQ8PFgIfAQUFQ1MxMDFkZAICDw8WAh8BBRtJbnRyb2R1Y3Rpb24gVG8gUHJvZ3JhbW1pbmdkZAIDDw8WAh8BBQEzZGQCBA8PFgQfAQUKIDQuMjAgKEErKR8CaGRkAgUPDxYCHwEFBSA0LjIwZGQCBg8PFgIfAQUCQStkZAIHDw8WAh8BBQRQYXNzZGQCBA9kFhBmDw8WAh8BBQcxNzMxMDIwZGQCAQ8PFgIfAQUFQ1MxMDJkZAICDw8WAh8BBQ9Qcm9ncmFtbWluZyBMYWJkZAIDDw8WAh8BBQExZGQCBA8PFgQfAQUKIDQuMjAgKEErKR8CaGRkAgUPDxYCHwEFBSA0LjIwZGQCBg8PFgIfAQUCQStkZAIHDw8WAh8BBQRQYXNzZGQCBQ8PFgIfAmhkFgICBA8PFgIfAmhkZAIDDxYCHwJoFgJmDxUEBDQuMDgENC4wOAIxMBBJTiBHT09EIFNUQU5ESU5HZAIFD2QWAmYPFQQENC4wOAQ0LjA4DURpc3Rpbmd1aXNoZWQQSU4gR09PRCBTVEFORElOR2QCAw9kFghmDxUBGVNlY29uZCBTZW1lc3RlciAyMDE4LTIwMTlkAgEPPCsAEQMADxYEHwVnHwQCCGQBEBYAFgAWAAwUKwAAFgJmD2QWFGYPZBYCAgQPDxYCHwJoZGQCAQ9kFhBmDw8WAh8BBQY5MjEwMjBkZAIBDw8WAh8BBQZQSFkxMDJkZAICDw8WAh8BBRNHZW5lcmFsIFBoeXNpY3MgKDIpZGQCAw8PFgIfAQUBM2RkAgQPDxYEHwEFCiAyLjc1IChDKykfAmhkZAIFDw8WAh8BBQUgMi43NWRkAgYPDxYCHwEFAkMrZGQCBw8PFgIfAQUEUGFzc2RkAgIPZBYQZg8PFgIfAQUHMTczMTEyMWRkAgEPDxYCHwEFBUNTMTEyZGQCAg8PFgIfAQUsSW50cm9kdWN0aW9uIFRvIE9iamVjdC0gT3JpZW50ZWQgUHJvZ3JhbW1pbmdkZAIDDw8WAh8BBQEzZGQCBA8PFgQfAQUKIDQuMjAgKEErKR8CaGRkAgUPDxYCHwEFBSA0LjIwZGQCBg8PFgIfAQUCQStkZAIHDw8WAh8BBQRQYXNzZGQCAw9kFhBmDw8WAh8BBQY5MDI0MTFkZAIBDw8WAh8BBQdNQVRIMjQxZGQCAg8PFgIfAQUURGlzY3JldGUgTWF0aGVtYXRpY3NkZAIDDw8WAh8BBQEzZGQCBA8PFgQfAQUJIDQuMDAgKEEpHwJoZGQCBQ8PFgIfAQUFIDQuMDBkZAIGDw8WAh8BBQFBZGQCBw8PFgIfAQUEUGFzc2RkAgQPZBYQZg8PFgIfAQUHMTc0MjAwMGRkAgEPDxYCHwEFBkNJczIwMGRkAgIPDxYCHwEFLFByb2Zlc3Npb25hbCBBbmQgRXRoaWNhbCBJc3N1ZXMgSW4gQ29tcHV0aW5nZGQCAw8PFgIfAQUBMWRkAgQPDxYEHwEFCSA0LjAwIChBKR8CaGRkAgUPDxYCHwEFBSA0LjAwZGQCBg8PFgIfAQUBQWRkAgcPDxYCHwEFBFBhc3NkZAIFD2QWEGYPDxYCHwEFBjkwMTAyMGRkAgEPDxYCHwEFB01BVEgxMDJkZAICDw8WAh8BBQpDYWxjdWx1cyAyZGQCAw8PFgIfAQUBM2RkAgQPDxYEHwEFCSA0LjAwIChBKR8CaGRkAgUPDxYCHwEFBSA0LjAwZGQCBg8PFgIfAQUBQWRkAgcPDxYCHwEFBFBhc3NkZAIGD2QWEGYPDxYCHwEFBjgwMTAxMmRkAgEPDxYCHwEFBkFSQjEwMWRkAgIPDxYCHwEFD0FyYWJpYyBMYW5ndWFnZWRkAgMPDxYCHwEFATNkZAIEDw8WBB8BBQkgNC4wMCAoQSkfAmhkZAIFDw8WAh8BBQUgNC4wMGRkAgYPDxYCHwEFAUFkZAIHDw8WAh8BBQRQYXNzZGQCBw9kFhBmDw8WAh8BBQcyNTExMTIwZGQCAQ8PFgIfAQUFTEcxMTJkZAICDw8WAh8BBRRFbmdsaXNoIExhbmd1YWdlICgyKWRkAgMPDxYCHwEFATNkZAIEDw8WBB8BBQkgNC4wMCAoQSkfAmhkZAIFDw8WAh8BBQUgNC4wMGRkAgYPDxYCHwEFAUFkZAIHDw8WAh8BBQRQYXNzZGQCCA9kFhBmDw8WAh8BBQcxNzMxMTMwZGQCAQ8PFgIfAQUFQ1MxMTNkZAICDw8WAh8BBR9PYmplY3QtT3JpZW50ZWQgUHJvZ3JhbW1pbmcgTGFiZGQCAw8PFgIfAQUBMWRkAgQPDxYEHwEFCSA0LjAwIChBKR8CaGRkAgUPDxYCHwEFBSA0LjAwZGQCBg8PFgIfAQUBQWRkAgcPDxYCHwEFBFBhc3NkZAIJDw8WAh8CaGQWAgIEDw8WAh8CaGRkAgMPFgIfAmgWAmYPFQQEMy44NAQzLjkyAjIwCEhPTk9VUkVEZAIFD2QWAmYPFQQEMy44NAQzLjkyCUV4Y2VsbGVudAhIT05PVVJFRGQCBA9kFghmDxUBGVN1bW1lciBTZW1lc3RlciAyMDE4LTIwMTlkAgEPPCsAEQMADxYEHwVnHwQCA2QBEBYAFgAWAAwUKwAAFgJmD2QWCmYPZBYCAgQPDxYCHwJoZGQCAQ9kFhBmDw8WAh8BBQcxNzEyMzEwZGQCAQ8PFgIfAQUGQ1BFMjMxZGQCAg8PFgIfAQUURGlnaXRhbCBMb2dpYyBEZXNpZ25kZAIDDw8WAh8BBQEzZGQCBA8PFgQfAQUJIDQuMDAgKEEpHwJoZGQCBQ8PFgIfAQUFIDQuMDBkZAIGDw8WAh8BBQFBZGQCBw8PFgIfAQUEUGFzc2RkAgIPZBYQZg8PFgIfAQUGODIxMTkwZGQCAQ8PFgIfAQUGSFNTMTE5ZGQCAg8PFgIfAQUfRW50cmVwcmVuZXVyc2hpcCBBbmQgSW5ub3ZhdGlvbmRkAgMPDxYCHwEFATJkZAIEDw8WBB8BBQkgNC4wMCAoQSkfAmhkZAIFDw8WAh8BBQUgNC4wMGRkAgYPDxYCHwEFAUFkZAIHDw8WAh8BBQRQYXNzZGQCAw9kFhBmDw8WAh8BBQY5MDIwMzBkZAIBDw8WAh8BBQdNQVRIMjAzZGQCAg8PFgIfAQUfT3JkaW5hcnkgRGlmZmVyZW50aWFsIEVxdWF0aW9uc2RkAgMPDxYCHwEFATNkZAIEDw8WBB8BBQogMy41MCAoQispHwJoZGQCBQ8PFgIfAQUFIDMuNTBkZAIGDw8WAh8BBQJCK2RkAgcPDxYCHwEFBFBhc3NkZAIEDw8WAh8CaGQWAgIEDw8WAh8CaGRkAgMPFgIfAmgWAmYPFQQEMy44MQQzLjkwATgQSU4gR09PRCBTVEFORElOR2QCBQ9kFgJmDxUEBDMuODEEMy45MAlFeGNlbGxlbnQQSU4gR09PRCBTVEFORElOR2QCBQ9kFghmDxUBGEZpcnN0IFNlbWVzdGVyIDIwMTktMjAyMGQCAQ88KwARAwAPFgQfBWcfBAIIZAEQFgAWABYADBQrAAAWAmYPZBYUZg9kFgICBA8PFgIfAmhkZAIBD2QWEGYPDxYCHwEFBzE3MTIzMjBkZAIBDw8WAh8BBQZDUEUyMzJkZAICDw8WAh8BBRhEaWdpdGFsIExvZ2ljIERlc2lnbiBMYWJkZAIDDw8WAh8BBQExZGQCBA8PFgQfAQUJIDQuMDAgKEEpHwJoZGQCBQ8PFgIfAQUFIDQuMDBkZAIGDw8WAh8BBQFBZGQCBw8PFgIfAQUEUGFzc2RkAgIPZBYQZg8PFgIfAQUGODIxMjkwZGQCAQ8PFgIfAQUGSFNTMTI5ZGQCAg8PFgIfAQUOR2VuZXJhbCBTa2lsbHNkZAIDDw8WAh8BBQEyZGQCBA8PFgQfAQUKIDQuMjAgKEErKR8CaGRkAgUPDxYCHwEFBSA0LjIwZGQCBg8PFgIfAQUCQStkZAIHDw8WAh8BBQRQYXNzZGQCAw9kFhBmDw8WAh8BBQcxNzUzMDEwZGQCAQ8PFgIfAQUGTkVTMzAxZGQCAg8PFgIfAQUeUHJvYmFiaWxpdHkgQW5kIFF1ZXVpbmcgVGhlb3J5ZGQCAw8PFgIfAQUBM2RkAgQPDxYEHwEFCSA0LjAwIChBKR8CaGRkAgUPDxYCHwEFBSA0LjAwZGQCBg8PFgIfAQUBQWRkAgcPDxYCHwEFBFBhc3NkZAIED2QWEGYPDxYCHwEFBzE3MzIxMTJkZAIBDw8WAh8BBQVDUzIxMWRkAgIPDxYCHwEFD0RhdGEgU3RydWN0dXJlc2RkAgMPDxYCHwEFATNkZAIEDw8WBB8BBQogNC4yMCAoQSspHwJoZGQCBQ8PFgIfAQUFIDQuMjBkZAIGDw8WAh8BBQJBK2RkAgcPDxYCHwEFBFBhc3NkZAIFD2QWEGYPDxYCHwEFBjkyMTA3MmRkAgEPDxYCHwEFBlBIWTEwN2RkAgIPDxYCHwEFNUdlbmVyYWwgUGh5c2ljcyBMYWJvcmF0b3J5IChGb3IgTm9uLVBoeXNpY3MgU3R1ZGVudHMpZGQCAw8PFgIfAQUBMWRkAgQPDxYEHwEFCSA0LjAwIChBKR8CaGRkAgUPDxYCHwEFBSA0LjAwZGQCBg8PFgIfAQUBQWRkAgcPDxYCHwEFBFBhc3NkZAIGD2QWEGYPDxYCHwEFBjI0MjEyMWRkAgEPDxYCHwEFBUVFMjEyZGQCAg8PFgIfAQUbRWxlY3RyaWMgIENpcmN1aXQgIEFuYWx5c2lzZGQCAw8PFgIfAQUBM2RkAgQPDxYEHwEFCSA0LjAwIChBKR8CaGRkAgUPDxYCHwEFBSA0LjAwZGQCBg8PFgIfAQUBQWRkAgcPDxYCHwEFBFBhc3NkZAIHD2QWEGYPDxYCHwEFBzE3MTI1MjBkZAIBDw8WAh8BBQZDUEUyNTJkZAICDw8WAh8BBSBDb21wdXRlciBPcmdhbml6YXRpb24gQW5kIERlc2lnbmRkAgMPDxYCHwEFATNkZAIEDw8WBB8BBQkgNC4wMCAoQSkfAmhkZAIFDw8WAh8BBQUgNC4wMGRkAgYPDxYCHwEFAUFkZAIHDw8WAh8BBQRQYXNzZGQCCA9kFhBmDw8WAh8BBQY4MjExMDBkZAIBDw8WAh8BBQZIU1MxMTBkZAICDw8WAh8BBRVTb2NpYWwgUmVzcG9uc2liaWxpdHlkZAIDDw8WAh8BBQEzZGQCBA8PFgQfAQUJIDQuMDAgKEEpHwJoZGQCBQ8PFgIfAQUFIDQuMDBkZAIGDw8WAh8BBQFBZGQCBw8PFgIfAQUEUGFzc2RkAgkPDxYCHwJoZBYCAgQPDxYCHwJoZGQCAw8WAh8CaBYCZg8VBAQ0LjA1BDMuOTUCMTkISE9OT1VSRURkAgUPZBYCZg8VBAQ0LjA1BDMuOTUJRXhjZWxsZW50CEhPTk9VUkVEZAIGD2QWCGYPFQEZU2Vjb25kIFNlbWVzdGVyIDIwMTktMjAyMGQCAQ88KwARAwAPFgQfBWcfBAIFZAEQFgAWABYADBQrAAAWAmYPZBYOZg9kFgICBA8PFgIfAmhkZAIBD2QWEGYPDxYCHwEFBjgwMjAwMGRkAgEPDxYCHwEFBkFSQjIwMGRkAgIPDxYCHwEFHkFwcHJlY2lhdGlvbiBPZiBMaXRlcmFyeSBUZXh0c2RkAgMPDxYCHwEFATNkZAIEDw8WBB8BBQkgNC4wMCAoQSkfAmhkZAIFDw8WAh8BBQUgNC4wMGRkAgYPDxYCHwEFAUFkZAIHDw8WAh8BBQRQYXNzZGQCAg9kFhBmDw8WAh8BBQYyNDIwNDJkZAIBDw8WAh8BBQVFRTIwNGRkAgIPDxYCHwEFHkludHJvZHVjdGlvbiBUbyBMaW5lYXIgU3lzdGVtc2RkAgMPDxYCHwEFATNkZAIEDw8WBB8BBQYmbmJzcDsfAmhkZAIFDw8WAh8BBQYmbmJzcDtkZAIGDw8WAh8BBQYmbmJzcDtkZAIHDw8WAh8BBQRQYXNzZGQCAw9kFhBmDw8WAh8BBQYyNDI2MDFkZAIBDw8WAh8BBQVFRTI2MGRkAgIPDxYCHwEFG1NpZ25hbCBBbmQgU3lzdGVtcyBBbmFseXNpc2RkAgMPDxYCHwEFATNkZAIEDw8WBB8BBQYmbmJzcDsfAmhkZAIFDw8WAh8BBQYmbmJzcDtkZAIGDw8WAh8BBQYmbmJzcDtkZAIHDw8WAh8BBQRQYXNzZGQCBA9kFhBmDw8WAh8BBQcxNzUyMDIwZGQCAQ8PFgIfAQUGTkVTMjAyZGQCAg8PFgIfAQUUSW50cm9kdWN0aW9uIFRvIFVuaXhkZAIDDw8WAh8BBQEzZGQCBA8PFgQfAQUGJm5ic3A7HwJoZGQCBQ8PFgIfAQUGJm5ic3A7ZGQCBg8PFgIfAQUGJm5ic3A7ZGQCBw8PFgIfAQUEUGFzc2RkAgUPZBYQZg8PFgIfAQUHMTc1MzExMGRkAgEPDxYCHwEFBk5FUzMxMWRkAgIPDxYCHwEFE0RhdGEgIENvbW11bmljYXRpb25kZAIDDw8WAh8BBQEzZGQCBA8PFgQfAQUGJm5ic3A7HwJoZGQCBQ8PFgIfAQUGJm5ic3A7ZGQCBg8PFgIfAQUGJm5ic3A7ZGQCBw8PFgIfAQUEUGFzc2RkAgYPDxYCHwJoZBYCAgQPDxYCHwJoZGQCAw8WAh8CaBYCZg8VBAE0BDMuOTUCMTUQSU4gR09PRCBTVEFORElOR2QCBQ9kFgJmDxUEATQEMy45NQlFeGNlbGxlbnQQSU4gR09PRCBTVEFORElOR2QCBw9kFghmDxUBGVN1bW1lciBTZW1lc3RlciAyMDE5LTIwMjBkAgEPPCsAEQMADxYEHwVnHwQCBGQBEBYAFgAWAAwUKwAAFgJmD2QWDGYPZBYCAgQPDxYCHwJoZGQCAQ9kFhBmDw8WAh8BBQY5MDIwMTBkZAIBDw8WAh8BBQdNQVRIMjAxZGQCAg8PFgIfAQUVSW50ZXJtZWRpYXRlIEFuYWx5c2lzZGQCAw8PFgIfAQUBM2RkAgQPDxYEHwEFBiZuYnNwOx8CaGRkAgUPDxYCHwEFBiZuYnNwO2RkAgYPDxYCHwEFBiZuYnNwO2RkAgcPDxYCHwEFBFBhc3NkZAICD2QWEGYPDxYCHwEFBjkxMTAzMWRkAgEPDxYCHwEFB0NIRU0xMDNkZAICDw8WAh8BBRFHZW5lcmFsIENoZW1pc3RyeWRkAgMPDxYCHwEFATNkZAIEDw8WBB8BBQYmbmJzcDsfAmhkZAIFDw8WAh8BBQYmbmJzcDtkZAIGDw8WAh8BBQYmbmJzcDtkZAIHDw8WAh8BBQRQYXNzZGQCAw9kFhBmDw8WAh8BBQY4NDEwMDBkZAIBDw8WAh8BBQVNUzEwMGRkAgIPDxYCHwEFEU1pbGl0YXJ5IFNjaWVuY2VzZGQCAw8PFgIfAQUBM2RkAgQPDxYEHwEFCiA0LjIwIChBKykfAmhkZAIFDw8WAh8BBQUgNC4yMGRkAgYPDxYCHwEFAkErZGQCBw8PFgIfAQUEUGFzc2RkAgQPZBYQZg8PFgIfAQUHMTc0MjAxMGRkAgEPDxYCHwEFBkNJczIwMWRkAgIPDxYCHwEFGkludHJvZHVjdGlvbiBUbyBXZWIgRGVzaWduZGQCAw8PFgIfAQUBMWRkAgQPDxYEHwEFCiAzLjc1IChBLSkfAmhkZAIFDw8WAh8BBQUgMy43NWRkAgYPDxYCHwEFAkEtZGQCBw8PFgIfAQUEUGFzc2RkAgUPDxYCHwJoZBYCAgQPDxYCHwJoZGQCAw8WAh8CaBYCZg8VBAQ0LjA5BDMuOTYCMTAQSU4gR09PRCBTVEFORElOR2QCBQ9kFgJmDxUEBDQuMDkEMy45NglFeGNlbGxlbnQQSU4gR09PRCBTVEFORElOR2QCCA9kFghmDxUBGEZpcnN0IFNlbWVzdGVyIDIwMjAtMjAyMWQCAQ88KwARAwAPFgQfBWcfBAIGZAEQFgAWABYADBQrAAAWAmYPZBYQZg9kFgICBA8PFgIfAmhkZAIBD2QWEGYPDxYCHwEFBjI0MjEzMGRkAgEPDxYCHwEFBUVFMjEzZGQCAg8PFgIfAQUXRWxlY3RyaWNhbCBDaXJjdWl0cyBMYWJkZAIDDw8WAh8BBQExZGQCBA8PFgQfAQUKIDMuMDAgKEItKR8CaGRkAgUPDxYCHwEFBSAzLjAwZGQCBg8PFgIfAQUCQi1kZAIHDw8WAh8BBQRQYXNzZGQCAg9kFhBmDw8WAh8BBQY2MjIwMTFkZAIBDw8WAh8BBQVQUDIwMWRkAgIPDxYCHwEFLkJlZWtlZXBpbmcgKEZvciBOb24gUGxhbnQgUHJvZHVjdGlvbiBTdHVkZW50cylkZAIDDw8WAh8BBQEzZGQCBA8PFgQfAQUJIDQuMDAgKEEpHwJoZGQCBQ8PFgIfAQUFIDQuMDBkZAIGDw8WAh8BBQFBZGQCBw8PFgIfAQUEUGFzc2RkAgMPZBYQZg8PFgIfAQUHMTcxMzUyMGRkAgEPDxYCHwEFBkNQRTM1MmRkAgIPDxYCHwEFFkNvbXB1dGVyICBBcmNoaXRlY3R1cmVkZAIDDw8WAh8BBQEzZGQCBA8PFgQfAQUGJm5ic3A7HwJoZGQCBQ8PFgIfAQUGJm5ic3A7ZGQCBg8PFgIfAQUGJm5ic3A7ZGQCBw8PFgIfAQUEUGFzc2RkAgQPZBYQZg8PFgIfAQUGMjUyMTUwZGQCAQ8PFgIfAQUFTUUyMTVkZAICDw8WAh8BBRVFbmdpbmVlcmluZyBNZWNoYW5pY3NkZAIDDw8WAh8BBQEzZGQCBA8PFgQfAQUGJm5ic3A7HwJoZGQCBQ8PFgIfAQUGJm5ic3A7ZGQCBg8PFgIfAQUGJm5ic3A7ZGQCBw8PFgIfAQUEUGFzc2RkAgUPZBYQZg8PFgIfAQUGMjQzMjEzZGQCAQ8PFgIfAQUFRUUzMjFkZAICDw8WAh8BBS1GdW5kYW1lbnRhbHMgT2YgRWxlY3Ryb25pY3MgKE5vbiBFZSBTdHVkZW50cylkZAIDDw8WAh8BBQEzZGQCBA8PFgQfAQUGJm5ic3A7HwJoZGQCBQ8PFgIfAQUGJm5ic3A7ZGQCBg8PFgIfAQUGJm5ic3A7ZGQCBw8PFgIfAQUEUGFzc2RkAgYPZBYQZg8PFgIfAQUHMTc0MjIxMGRkAgEPDxYCHwEFBkNJczIyMWRkAgIPDxYCHwEFIEZ1bmRhbWVudGFscyBPZiBEYXRhYmFzZSBTeXN0ZW1zZGQCAw8PFgIfAQUBM2RkAgQPDxYEHwEFBiZuYnNwOx8CaGRkAgUPDxYCHwEFBiZuYnNwO2RkAgYPDxYCHwEFBiZuYnNwO2RkAgcPDxYCHwEFBFBhc3NkZAIHDw8WAh8CaGQWAgIEDw8WAh8CaGRkAgMPFgIfAmgWAmYPFQQEMy43NQQzLjk1AjE2EElOIEdPT0QgU1RBTkRJTkdkAgUPZBYCZg8VBAQzLjc1BDMuOTUJRXhjZWxsZW50EElOIEdPT0QgU1RBTkRJTkdkAgkPZBYIZg8VARlTZWNvbmQgU2VtZXN0ZXIgMjAyMC0yMDIxZAIBDzwrABEDAA8WBB8FZx8EAgVkARAWABYAFgAMFCsAABYCZg9kFg5mD2QWAgIEDw8WAh8CaGRkAgEPZBYQZg8PFgIfAQUGMjUyMDAwZGQCAQ8PFgIfAQUFTUUyMDBkZAICDw8WAh8BBRdFbmdpbmVlcmluZyBEcmF3aW5nIChBKWRkAgMPDxYCHwEFATFkZAIEDw8WBB8BBQkgNC4wMCAoQSkfAmhkZAIFDw8WAh8BBQUgNC4wMGRkAgYPDxYCHwEFAUFkZAIHDw8WAh8BBQRQYXNzZGQCAg9kFhBmDw8WAh8BBQcxNzE0NzMwZGQCAQ8PFgIfAQUGQ1BFNDczZGQCAg8PFgIfAQURT3BlcmF0aW5nIFN5c3RlbXNkZAIDDw8WAh8BBQEzZGQCBA8PFgQfAQUKIDMuNzUgKEEtKR8CaGRkAgUPDxYCHwEFBSAzLjc1ZGQCBg8PFgIfAQUCQS1kZAIHDw8WAh8BBQRQYXNzZGQCAw9kFhBmDw8WAh8BBQcxNzUzMTIwZGQCAQ8PFgIfAQUGTkVTMzEyZGQCAg8PFgIfAQUhRnVuZGFtZW50YWxzIE9mIENvbXB1dGVyIE5ldHdvcmtzZGQCAw8PFgIfAQUBM2RkAgQPDxYEHwEFBiZuYnNwOx8CaGRkAgUPDxYCHwEFBiZuYnNwO2RkAgYPDxYCHwEFBiZuYnNwO2RkAgcPDxYCHwEFBFBhc3NkZAIED2QWEGYPDxYCHwEFBzE3NDIwMjBkZAIBDw8WAh8BBQZDSXMyMDJkZAICDw8WAh8BBRRDb21tdW5pY2F0aW9uIFNraWxsc2RkAgMPDxYCHwEFATJkZAIEDw8WBB8BBQkgNC4wMCAoQSkfAmhkZAIFDw8WAh8BBQUgNC4wMGRkAgYPDxYCHwEFAUFkZAIHDw8WAh8BBQRQYXNzZGQCBQ9kFhBmDw8WAh8BBQcxNzU0NTEwZGQCAQ8PFgIfAQUGTkVTNDUxZGQCAg8PFgIfAQUlQmFzaWNzIE9mIEluZm9ybWF0aW9uIFN5c3RlbSBTZWN1cml0eWRkAgMPDxYCHwEFATNkZAIEDw8WBB8BBQogMy43NSAoQS0pHwJoZGQCBQ8PFgIfAQUFIDMuNzVkZAIGDw8WAh8BBQJBLWRkAgcPDxYCHwEFBFBhc3NkZAIGDw8WAh8CaGQWAgIEDw8WAh8CaGRkAgMPFgIfAmgWAmYPFQQEMy44MwQzLjk0AjEyEElOIEdPT0QgU1RBTkRJTkdkAgUPZBYCZg8VBAQzLjgzBDMuOTQJRXhjZWxsZW50EElOIEdPT0QgU1RBTkRJTkdkAgoPZBYIZg8VARlTdW1tZXIgU2VtZXN0ZXIgMjAyMC0yMDIxZAIBDzwrABEDAA8WBB8FZx8EAgJkARAWABYAFgAMFCsAABYCZg9kFghmD2QWAgIEDw8WAh8CaGRkAgEPZBYQZg8PFgIfAQUHMTcxMzUxMmRkAgEPDxYCHwEFBkNQRTM1MWRkAgIPDxYCHwEFF01pY3JvcHJvY2Vzc29yICBTeXN0ZW1zZGQCAw8PFgIfAQUBM2RkAgQPDxYEHwEFBiZuYnNwOx8CaGRkAgUPDxYCHwEFBiZuYnNwO2RkAgYPDxYCHwEFBiZuYnNwO2RkAgcPDxYCHwEFBFBhc3NkZAICD2QWEGYPDxYCHwEFBzE3NTQxNTBkZAIBDw8WAh8BBQZORVM0MTVkZAICDw8WAh8BBRVOZXR3b3JraW5nICBQcm90b2NvbHNkZAIDDw8WAh8BBQEzZGQCBA8PFgQfAQUGJm5ic3A7HwJoZGQCBQ8PFgIfAQUGJm5ic3A7ZGQCBg8PFgIfAQUGJm5ic3A7ZGQCBw8PFgIfAQUEUGFzc2RkAgMPDxYCHwJoZBYCAgQPDxYCHwJoZGQCAw8WAh8CaBYCZg8VBAEwBDMuOTQBNhBJTiBHT09EIFNUQU5ESU5HZAIFD2QWAmYPFQQBMAQzLjk0CUV4Y2VsbGVudBBJTiBHT09EIFNUQU5ESU5HZAIEDw9kDxAWAWYWARYCHg5QYXJhbWV0ZXJWYWx1ZWQWAQIDZGQCDA8PFgIfAQUBMWRkGAsFLmN0bDAwJGNvbnRlbnRQSCRjdGwwMCRyZXBTZW1zJGN0bDA5JGdydkNvdXJzZXMPPCsADAEIAgFkBS5jdGwwMCRjb250ZW50UEgkY3RsMDAkcmVwU2VtcyRjdGwwMyRncnZDb3Vyc2VzDzwrAAwBCAIBZAUuY3RsMDAkY29udGVudFBIJGN0bDAwJHJlcFNlbXMkY3RsMDYkZ3J2Q291cnNlcw88KwAMAQgCAWQFLmN0bDAwJGNvbnRlbnRQSCRjdGwwMCRyZXBTZW1zJGN0bDEwJGdydkNvdXJzZXMPPCsADAEIAgFkBS5jdGwwMCRjb250ZW50UEgkY3RsMDAkcmVwU2VtcyRjdGwwMCRncnZDb3Vyc2VzDzwrAAwBCAIBZAUuY3RsMDAkY29udGVudFBIJGN0bDAwJHJlcFNlbXMkY3RsMDEkZ3J2Q291cnNlcw88KwAMAQgCAWQFLmN0bDAwJGNvbnRlbnRQSCRjdGwwMCRyZXBTZW1zJGN0bDA1JGdydkNvdXJzZXMPPCsADAEIAgFkBS5jdGwwMCRjb250ZW50UEgkY3RsMDAkcmVwU2VtcyRjdGwwOCRncnZDb3Vyc2VzDzwrAAwBCAIBZAUuY3RsMDAkY29udGVudFBIJGN0bDAwJHJlcFNlbXMkY3RsMDckZ3J2Q291cnNlcw88KwAMAQgCAWQFLmN0bDAwJGNvbnRlbnRQSCRjdGwwMCRyZXBTZW1zJGN0bDA0JGdydkNvdXJzZXMPPCsADAEIAgFkBS5jdGwwMCRjb250ZW50UEgkY3RsMDAkcmVwU2VtcyRjdGwwMiRncnZDb3Vyc2VzDzwrAAwBCAIBZIoY+vdtvX41xIULy1S8c0lYElaIYJHlQpauaar7f6G2">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="A1E74595">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAPG9cFQphiBrf8yULCoFge35+LZ6VrQ3xGArsZRnG0xApRXLCGw3rZegZoRDvnJre1HnucPgXUXKXuH9120WKmwRIVGWIb0CN9xK0OhiGekYA==">
+</div>
+        
+        <div style="min-height: 100%; width: 100%; min-width: 1200px;">
+
+            
+
+            
+
+            <div class="top-header" style="direction: ltr;">
+                <div style="float: left;">
+                    <img src="./transcript_files/just_logo_new_en.png" alt="JUST Logo">
+                </div>
+                <div class="site-title" style="float: left;">
+                    <div class="site-div_En">
+                        Student Services
+                    </div>
+                </div>
+                <div style="float: right;">
+                    <a id="ctl00_lbLanguage" href="javascript:__doPostBack(&#39;ctl00$lbLanguage&#39;,&#39;&#39;)">
+                        <img src="./transcript_files/ar_lang_icon.png" alt="English">
+                    </a>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+
+            
+
+            <div class="InfoDiv_En">
+                <div class="NameDiv_En">
+                    <span id="ctl00_nameLbl">Welcome AMMAR KHALED ABDEL LATIF SHANIR</span>
+                    <br>
+                    <span id="ctl00_lblStuNo">Student Number: 134028</span>
+                </div>
+                <div class="MsgsDiv_En">
+                    <span id="ctl00_lblStudentLevelAndRegDate">Academic Year Level: 4 / Your Registration Will Be On 22-02-2022 10:30</span>
+                    <br>
+                    <span id="ctl00_msg2Lbl"></span>
+                </div>
+                <div class="clear"></div>
+                <div>
+                    <input type="submit" name="ctl00$lbAllAccounts" value="All Student Accounts" id="ctl00_lbAllAccounts" class="Control_Button">
+                    
+                </div>
+            </div>
+
+            <div style="direction: ltr; margin: 10px 20px 20px 10px;">
+                <div class="menuDiv_En">
+                    <ul id="ctl00_MainMenuOnSeat" class="MainMenu MenuFonts_En">
+                        <li>
+                            <a href="https://services.just.edu.jo/stuservices/student/Default.aspx">Homepage</a></li>
+                        <li class="HasSubMenu">
+                            <div class="arrow-in-main-menu_En"></div>
+                            <div class="ContainerSubMenu_En">
+                                <div class="ArrowSubMenu_En">
+                                    <div class="arrow-beside_sub_menu_En"></div>
+                                </div>
+                                <div class="SubMenuDiv">
+                                    <ul>
+                                        
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Info/StudentInfo_En.aspx">Personal Information</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Info/StuEmail_En.aspx">Student Email</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Info/StuAddress_En.aspx">Address</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Info/UpdatePhoneAndEmail_En.aspx">Update Phone and Email</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Info/DepartureAndReturnAddress_En.aspx">عنوان الإنطلاق والعودة</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Info/PersonalInfoAdoption_En.aspx">Personal Info Adoption</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Info/StuConfirm_En.aspx">Student Confirm</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Info/StuOtherNationality_En.aspx">Other Nationalities</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Info/MilitaryServices_En.aspx">Military Book</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <a>Student Information</a>
+                        </li>
+
+                        <li class="HasSubMenu">
+                            <div class="arrow-in-main-menu_En"></div>
+                            <div class="ContainerSubMenu_En">
+                                <div class="ArrowSubMenu_En">
+                                    <div class="arrow-beside_sub_menu_En"></div>
+                                </div>
+                                <div class="SubMenuDiv">
+                                    <ul>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/sturegistration">Courses Registration - Add and Drop Courses</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/marks_En.aspx">Transcript</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/lastregisterdcourses_En.aspx">Registered Courses</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/Subjects4Registration_En.aspx">Available Courses</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/DelOutRegistration_En.aspx">Delete Courses Out of Period</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/registerNotification_En.aspx">Registration Receipt</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/StudentCard_En.aspx">Student Card</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/AcademicPlan_En.aspx">Academic Plan</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/GuidancePlan_En.aspx">Guidance Plan</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/ReviewMark_En.aspx">Review Course Mark</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/RegistrarAppointment_En.aspx">Registrar Appointment</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/GraduatePostpone_En.aspx">Request Graduate Postpone</a>
+                                        </li>
+                                        <li id="ctl00_liRegMedGroup" style="display:none;">
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/RegMedGroup_En.aspx">Register Med, Dentistry Group</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/ChangePlan_En.aspx">Change Academic Plan</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a>Registration</a>
+                        </li>
+
+                        <li class="HasSubMenu">
+                            <div class="arrow-in-main-menu_En"></div>
+                            <div class="ContainerSubMenu_En">
+                                <div class="ArrowSubMenu_En">
+                                    <div class="arrow-beside_sub_menu_En"></div>
+                                </div>
+                                <div class="SubMenuDiv">
+                                    <ul>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/SemResult/WorkSemResult_En.aspx">Semester Work Results</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/SemResult/CurrentSemesterResult_En.aspx">Final Results</a>
+                                        </li>
+                                        <li id="ctl00_liEngineeringWorkshop" style="display:none;">
+                                            <a href="https://services.just.edu.jo/stuservices/student/SemResult/EngineeringWorkshop_En.aspx">Engineering Workshop Training</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a>Semester Results</a>
+                        </li>
+
+                        <li class="HasSubMenu">
+                            <div class="arrow-in-main-menu_En"></div>
+                            <div class="ContainerSubMenu_En">
+                                <div class="ArrowSubMenu_En">
+                                    <div class="arrow-beside_sub_menu_En"></div>
+                                </div>
+                                <div class="SubMenuDiv">
+                                    <ul>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Schedules/finalExam_En.aspx">Semester Activities Schedule</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Schedules/RealFinalExams_En.aspx">Exams Schedule</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Schedules/GuidanceSchedule_En.aspx">Guidance Schedule</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a>Schedules</a>
+                        </li>
+
+                        <li class="HasSubMenu">
+                            <div class="arrow-in-main-menu_En"></div>
+                            <div class="ContainerSubMenu_En">
+                                <div class="ArrowSubMenu_En">
+                                    <div class="arrow-beside_sub_menu_En"></div>
+                                </div>
+                                <div class="SubMenuDiv">
+                                    <ul>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Finance/CreditDeposit_En.aspx">Deposit Money</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Finance/HoursFees_En.aspx">Hours Fees</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Finance/StudentFine_En.aspx">Finance</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Finance/feesrefund_En.aspx">Fees Refund</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Finance/FeesPostponeStatus_En.aspx">Fees Postpone Status</a>
+                                        </li>
+                                        <li id="ctl00_liCreditTransferOnSeat" style="display:block;">
+                                            <a href="https://services.just.edu.jo/stuservices/student/Finance/CreditTransfer_En.aspx">Credit Transfer</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a>Student Finance</a>
+                        </li>
+
+                        <li>
+                            <a href="https://services.just.edu.jo/stuservices/student/Incomplete/IncompleteExamForm_En.aspx">Incomplete Exam Request</a>
+                        </li>
+
+                        <li>
+                            <a href="https://services.just.edu.jo/stuservices/student/reg/Exceptions/Withdrawal_En.aspx">Registration Services</a>
+                        </li>
+                        <li>
+                            <a href="https://services.just.edu.jo/stuservices/student/CourseQA/CQA_ViewCourses_En.aspx">Assess Courses</a>
+                        </li>
+                        <li class="HasSubMenu">
+                            <div class="arrow-in-main-menu_En"></div>
+                            <div class="ContainerSubMenu_En">
+                                <div class="ArrowSubMenu_En">
+                                    <div class="arrow-beside_sub_menu_En"></div>
+                                </div>
+                                <div class="SubMenuDiv">
+                                    <ul>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/Exceptions/CancelPrerequisiteForm_En.aspx">Prerequisite Exception Request</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/Exceptions/AlternativeCourse_En.aspx">Alternative Course Request</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/Exceptions/ParallelCourses_En.aspx">Parallel Course Request</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/Exceptions/Reg_MinHoursException_En.aspx">Cancel Limit Hours</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/Exceptions/DeptHeadApprove_En.aspx">Register Elective Course</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/Exceptions/RegBelowLowerLimit_En.aspx">Below Lower Limit Exception</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/Exceptions/UnivElectiveSameGroup_En.aspx">University Elective Same Group</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <a>Registration Exceptions</a>
+                        </li>
+                        <li id="ctl00_LI_RegistrationAnnualException" class="HasSubMenu" style="display:none;">
+                            <div class="arrow-in-main-menu_En"></div>
+                            <div class="ContainerSubMenu_En">
+                                <div class="ArrowSubMenu_En">
+                                    <div class="arrow-beside_sub_menu_En"></div>
+                                </div>
+                                <div class="SubMenuDiv">
+                                    <ul>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/MedExceptions/OutOfPlanException_En.aspx">Cancel Guidance PLan Exception</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/MedExceptions/RegCourseNextLevelException_En.aspx">Register Course From Next Level</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/MedExceptions/RegExceedUpperLimit_En.aspx">Exceed Upper Limit Exception</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/Exceptions/RegBelowLowerLimit_En.aspx">Below Lower Limit Exception</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a>Registration Exception / Medical</a>
+                        </li>
+
+                        <li>
+                            <a href="https://services.just.edu.jo/stuservices/student/reg/Documents/OrderDocuments_En.aspx">Order Student Documents</a>
+                        </li>
+
+                        <li class="HasSubMenu">
+                            <div class="arrow-in-main-menu_En"></div>
+                            <div class="ContainerSubMenu_En">
+                                <div class="ArrowSubMenu_En">
+                                    <div class="arrow-beside_sub_menu_En"></div>
+                                </div>
+                                <div class="SubMenuDiv">
+                                    <ul>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/OnlineExams/OnlineExamSchedule_En.aspx">Online Exams Schedule</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/OnlineExams/OnlineExamReview_En.aspx">Online Exams Review</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a>Online Exams</a>
+                        </li>
+
+                        <li>
+                            <a href="https://services.just.edu.jo/stuservices/student/OnlineExams/ElearningWorkshop_En.aspx">Elearning Workshops</a>
+                        </li>
+
+                        
+
+                        <li class="HasSubMenu">
+                            <div class="arrow-in-main-menu_En"></div>
+                            <div class="ContainerSubMenu_En">
+                                <div class="ArrowSubMenu_En">
+                                    <div class="arrow-beside_sub_menu_En"></div>
+                                </div>
+                                <div class="SubMenuDiv">
+                                    <ul>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/Transfer/HoursTransform_En.aspx">Display Courses</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/Transfer/Transform_En.aspx">Transfer Form</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/Transfer/CourseEquivelent_En.aspx">Course Equivelent</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a>Transfer</a>
+                        </li>
+
+                        <li id="ctl00_isoLI" class="HasSubMenu" style="display:none;">
+                            <div class="arrow-in-main-menu_En"></div>
+                            <div class="ContainerSubMenu_En">
+                                <div class="ArrowSubMenu_En">
+                                    <div class="arrow-beside_sub_menu_En"></div>
+                                </div>
+                                <div class="SubMenuDiv">
+                                    <ul>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/International/InsertResidencyInfo_En.aspx">Insert Residency Info</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/International/FormsFollowup_En.aspx">Forms Followup</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <a>International Students</a>
+                        </li>
+
+                        <li class="HasSubMenu">
+                            <div class="arrow-in-main-menu_En"></div>
+                            <div class="ContainerSubMenu_En">
+                                <div class="ArrowSubMenu_En">
+                                    <div class="arrow-beside_sub_menu_En"></div>
+                                </div>
+                                <div class="SubMenuDiv">
+                                    <ul>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/SkillExams/ReserveSkillExamSession_En.aspx">Reserve Skill Exam Session</a>
+                                        </li>
+                                        
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/reg/SkillExams/SkillExamEquation_En.aspx">Skill Exams Equivalency</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <a>Skill Exams</a>
+                        </li>
+
+                        <li>
+                            <a href="https://services.just.edu.jo/stuservices/student/reg/CE/CE_MainForm_En.aspx">Courses Equivalency</a>
+                        </li>
+
+                        <li id="ctl00_liRequestHousing" style="display:none;">
+                            <a href="https://services.just.edu.jo/stuservices/student/Affair/StudentHousing/RequestHousing_En.aspx">التسجيل في سكن الطالبات</a>
+                        </li>
+
+                        <li>
+                            <a href="https://services.just.edu.jo/stuservices/student/StuExchange/Announcements_En.aspx">Student Exchange</a>
+                        </li>
+
+                        <li class="HasSubMenu">
+                            <div class="arrow-in-main-menu_En"></div>
+                            <div class="ContainerSubMenu_En">
+                                <div class="ArrowSubMenu_En">
+                                    <div class="arrow-beside_sub_menu_En"></div>
+                                </div>
+                                <div class="SubMenuDiv">
+                                    <ul>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Finance/Invoices/Invoices_En.aspx">Misc. Bills</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Finance/Invoices/HealthCenterInvoices_En.aspx">Health Center Bills</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Finance/Invoices/FemaleStudentHousing_En.aspx">Student Housing</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a>Invoices</a>
+                        </li>
+
+                        <li class="HasSubMenu">
+                            <div class="arrow-in-main-menu_En"></div>
+                            <div class="ContainerSubMenu_En">
+                                <div class="ArrowSubMenu_En">
+                                    <div class="arrow-beside_sub_menu_En"></div>
+                                </div>
+                                <div class="SubMenuDiv">
+                                    <ul>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Affair/JobGuidance/JobGuidance_En.aspx">الإرشاد الوظيفي</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Affair/JobGuidance/TrainingCourses_En.aspx">الدورات التدريبية</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a>Job Guidance Office</a>
+                        </li>
+
+                        <li>
+                            <a href="https://services.just.edu.jo/stuservices/student/QualCerts/QualificationExam_En.aspx">Qualification Certificate</a>
+                        </li>
+
+                        <li>
+                            <a href="https://techno.just.edu.jo/portals" target="_blank">Gym Services</a>
+                        </li>
+
+                        <li>
+                            <a href="https://services.just.edu.jo/stuservices/student/Dentistry/RequestPatientFile_En.aspx">Request Patient File/Dental Clinics</a>
+                        </li>
+
+                        <li>
+                            <a href="https://services.just.edu.jo/stuservices/student/Affair/StudentEmployment/AddEmploymentForm_En.aspx">Add Employment Form</a>
+                        </li>
+
+                        <li class="HasSubMenu">
+                            <div class="arrow-in-main-menu_En"></div>
+                            <div class="ContainerSubMenu_En">
+                                <div class="ArrowSubMenu_En">
+                                    <div class="arrow-beside_sub_menu_En"></div>
+                                </div>
+                                <div class="SubMenuDiv">
+                                    <ul>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Affair/RobeRequest_En.aspx">Request Robe</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Affair/GraduationCard_En.aspx">Graduation Ceremony Card</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a>Garduation Ceremony</a>
+                        </li>
+
+                        <li id="ctl00_liItCompetition" style="display:block;">
+                            <a href="https://services.just.edu.jo/stuservices/student/ITCompetition/UploadCompetitionFile.aspx">AU IT Competition</a>
+                        </li>
+
+                        <li>
+                            <a href="https://services.just.edu.jo/stuservices/student/Info/ohda_En.aspx">Clearance</a>
+                        </li>
+                        <li>
+                            <a href="https://services.just.edu.jo/stuservices/student/Info/Books_En.aspx">Library</a>
+                        </li>
+                        <li>
+                            <a href="https://services.just.edu.jo/stuservices/student/Misc/StuViolations_En.aspx">Violations</a>
+                        </li>
+                        <li>
+                            <a href="https://services.just.edu.jo/stuservices/student/Info/UNPOLITE_En.aspx">Penalties</a>
+                        </li>
+                        <li>
+                            <a href="https://services.just.edu.jo/stuservices/student/Info/GuidanceMsg_En.aspx">Messages</a>
+                        </li>
+                        <li class="HasSubMenu">
+                            <div class="arrow-in-main-menu_En"></div>
+                            <div class="ContainerSubMenu_En">
+                                <div class="ArrowSubMenu_En">
+                                    <div class="arrow-beside_sub_menu_En"></div>
+                                </div>
+                                <div class="SubMenuDiv">
+                                    <ul>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Passwords/ChangeADpass_En.aspx">Email/WIFI/Library Password</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Passwords/changePass_En.aspx">Registration Password</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://services.just.edu.jo/stuservices/student/Passwords/ElectronicExamPass_En.aspx">For Electronic Exams</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a>Password</a>
+                        </li>
+                        <li>
+                            <a href="https://services.just.edu.jo/stuservices/logout.aspx">Sign Out</a>
+                        </li>
+                    </ul>
+
+                    
+
+                </div>
+
+                <div class="mainContent_En">
+                    
+    <div style="width: 100%; padding: 5px 0 5px 0;" dir="ltr">
+        <fieldset>
+            <legend style="font-weight: bold; font-size: 10pt; color: black; font-family: Tahoma">Student transcript</legend>
+            
+
+            <div id="ctl00_contentPH_pnlTranscript">
+	
+                <table id="table1" width="100%">
+                    <tbody><tr>
+                        <td>
+                            
+
+
+
+<style type="text/css">
+    .sem{border:1px solid #000; margin-top:20px; }
+    .sem-name{font-size:12pt; padding:5px; background-color:#2C3E50; color:#fff;}
+    .sem-details{margin:10px 0; display: block; min-height: 20px;}
+    .sem-details div{float: left; width: 25%;}
+</style>
+
+
+        
+        <div class="sem">
+        
+            <div class="sem-name" style="text-align: center;">
+                Courses taken by the student within the program of student exchange - Erasmus
+            </div>
+        
+            <div>
+                <div>
+		<table cellspacing="0" rules="all" border="1" id="ctl00_contentPH_ctl00_repSems_ctl00_grvCourses" style="width:100%;border-collapse:collapse;">
+			<tbody><tr>
+				<th scope="col">Line No</th><th scope="col">Symbol</th><th scope="col">Name</th><th scope="col">Credit Hours</th><th scope="col">Grade Weight</th><th scope="col">Grade Letter</th><th scope="col">Result</th>
+			</tr><tr>
+				<td>1111000</td><td>P.T100</td><td>Wellness And Life Styles (Not For Physical &amp; Occupational Therapy)</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Exempted</td>
+			</tr><tr>
+				<td>1744820</td><td>CIs482</td><td>Operations Research</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Exempted</td>
+			</tr><tr>
+				<td>1744210</td><td>CIs421</td><td>Database Applications</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Exempted</td>
+			</tr>
+		</tbody></table>
+	</div>
+            </div>
+            
+            
+            
+            <div style="clear:both;"> </div>
+            <div id="ctl00_contentPH_ctl00_repSems_ctl00_weightDiv" class="sem-details">
+                <div>
+                    <b>Semester GPA:</b>&nbsp;0
+                </div>
+                <div>
+                    <b>Cumulative GPA:</b>&nbsp;0
+                </div>                    
+                <div>
+                    <b>GPA Rank:</b>&nbsp;
+                </div>
+                <div>
+                    <b>Semester Status:</b>&nbsp;IN GOOD STANDING
+                </div>
+            </div>
+            
+
+        </div>
+
+    
+        
+        <div class="sem">
+        
+            <div class="sem-name" style="text-align: center;">
+                Exempted Courses for Obtaining Pass Grade in the Proficiency Tests
+            </div>
+        
+            <div>
+                <div>
+		<table cellspacing="0" rules="all" border="1" id="ctl00_contentPH_ctl00_repSems_ctl01_grvCourses" style="width:100%;border-collapse:collapse;">
+			<tbody><tr>
+				<th scope="col">Line No</th><th scope="col">Symbol</th><th scope="col">Name</th><th scope="col">Credit Hours</th><th scope="col">Grade Weight</th><th scope="col">Grade Letter</th><th scope="col">Result</th>
+			</tr><tr>
+				<td>2510990</td><td>LG099</td><td>English Language (Remedial Course)</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Exempted</td>
+			</tr><tr>
+				<td>1740990</td><td>CIs099</td><td>Computer Skills (Remedial Course)</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Exempted</td>
+			</tr>
+		</tbody></table>
+	</div>
+            </div>
+            
+            
+            
+            <div style="clear:both;"> </div>
+            <div id="ctl00_contentPH_ctl00_repSems_ctl01_weightDiv" class="sem-details">
+                <div>
+                    <b>Semester GPA:</b>&nbsp;0
+                </div>
+                <div>
+                    <b>Cumulative GPA:</b>&nbsp;0
+                </div>                    
+                <div>
+                    <b>GPA Rank:</b>&nbsp;
+                </div>
+                <div>
+                    <b>Semester Status:</b>&nbsp;IN GOOD STANDING
+                </div>
+            </div>
+            
+
+        </div>
+
+    
+        
+        <div class="sem">
+        
+            <div class="sem-name" style="text-align: center;">
+                First Semester 2018-2019
+            </div>
+        
+            <div>
+                <div>
+		<table cellspacing="0" rules="all" border="1" id="ctl00_contentPH_ctl00_repSems_ctl02_grvCourses" style="width:100%;border-collapse:collapse;">
+			<tbody><tr>
+				<th scope="col">Line No</th><th scope="col">Symbol</th><th scope="col">Name</th><th scope="col">Credit Hours</th><th scope="col">Grade Weight</th><th scope="col">Grade Letter</th><th scope="col">Result</th>
+			</tr><tr>
+				<td>921010</td><td>PHY101</td><td>General  Physics (1)</td><td>3</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>901010</td><td>MATH101</td><td>Calculus I</td><td>3</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>1731011</td><td>CS101</td><td>Introduction To Programming</td><td>3</td><td> 4.20</td><td>A+</td><td>Pass</td>
+			</tr><tr>
+				<td>1731020</td><td>CS102</td><td>Programming Lab</td><td>1</td><td> 4.20</td><td>A+</td><td>Pass</td>
+			</tr>
+		</tbody></table>
+	</div>
+            </div>
+            
+            
+            
+            <div style="clear:both;"> </div>
+            <div id="ctl00_contentPH_ctl00_repSems_ctl02_weightDiv" class="sem-details">
+                <div>
+                    <b>Semester GPA:</b>&nbsp;4.08
+                </div>
+                <div>
+                    <b>Cumulative GPA:</b>&nbsp;4.08
+                </div>                    
+                <div>
+                    <b>GPA Rank:</b>&nbsp;Distinguished
+                </div>
+                <div>
+                    <b>Semester Status:</b>&nbsp;IN GOOD STANDING
+                </div>
+            </div>
+            
+
+        </div>
+
+    
+        
+        <div class="sem">
+        
+            <div class="sem-name" style="text-align: center;">
+                Second Semester 2018-2019
+            </div>
+        
+            <div>
+                <div>
+		<table cellspacing="0" rules="all" border="1" id="ctl00_contentPH_ctl00_repSems_ctl03_grvCourses" style="width:100%;border-collapse:collapse;">
+			<tbody><tr>
+				<th scope="col">Line No</th><th scope="col">Symbol</th><th scope="col">Name</th><th scope="col">Credit Hours</th><th scope="col">Grade Weight</th><th scope="col">Grade Letter</th><th scope="col">Result</th>
+			</tr><tr>
+				<td>921020</td><td>PHY102</td><td>General Physics (2)</td><td>3</td><td> 2.75</td><td>C+</td><td>Pass</td>
+			</tr><tr>
+				<td>1731121</td><td>CS112</td><td>Introduction To Object- Oriented Programming</td><td>3</td><td> 4.20</td><td>A+</td><td>Pass</td>
+			</tr><tr>
+				<td>902411</td><td>MATH241</td><td>Discrete Mathematics</td><td>3</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>1742000</td><td>CIs200</td><td>Professional And Ethical Issues In Computing</td><td>1</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>901020</td><td>MATH102</td><td>Calculus 2</td><td>3</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>801012</td><td>ARB101</td><td>Arabic Language</td><td>3</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>2511120</td><td>LG112</td><td>English Language (2)</td><td>3</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>1731130</td><td>CS113</td><td>Object-Oriented Programming Lab</td><td>1</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr>
+		</tbody></table>
+	</div>
+            </div>
+            
+            
+            
+            <div style="clear:both;"> </div>
+            <div id="ctl00_contentPH_ctl00_repSems_ctl03_weightDiv" class="sem-details">
+                <div>
+                    <b>Semester GPA:</b>&nbsp;3.84
+                </div>
+                <div>
+                    <b>Cumulative GPA:</b>&nbsp;3.92
+                </div>                    
+                <div>
+                    <b>GPA Rank:</b>&nbsp;Excellent
+                </div>
+                <div>
+                    <b>Semester Status:</b>&nbsp;HONOURED
+                </div>
+            </div>
+            
+
+        </div>
+
+    
+        
+        <div class="sem">
+        
+            <div class="sem-name" style="text-align: center;">
+                Summer Semester 2018-2019
+            </div>
+        
+            <div>
+                <div>
+		<table cellspacing="0" rules="all" border="1" id="ctl00_contentPH_ctl00_repSems_ctl04_grvCourses" style="width:100%;border-collapse:collapse;">
+			<tbody><tr>
+				<th scope="col">Line No</th><th scope="col">Symbol</th><th scope="col">Name</th><th scope="col">Credit Hours</th><th scope="col">Grade Weight</th><th scope="col">Grade Letter</th><th scope="col">Result</th>
+			</tr><tr>
+				<td>1712310</td><td>CPE231</td><td>Digital Logic Design</td><td>3</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>821190</td><td>HSS119</td><td>Entrepreneurship And Innovation</td><td>2</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>902030</td><td>MATH203</td><td>Ordinary Differential Equations</td><td>3</td><td> 3.50</td><td>B+</td><td>Pass</td>
+			</tr>
+		</tbody></table>
+	</div>
+            </div>
+            
+            
+            
+            <div style="clear:both;"> </div>
+            <div id="ctl00_contentPH_ctl00_repSems_ctl04_weightDiv" class="sem-details">
+                <div>
+                    <b>Semester GPA:</b>&nbsp;3.81
+                </div>
+                <div>
+                    <b>Cumulative GPA:</b>&nbsp;3.90
+                </div>                    
+                <div>
+                    <b>GPA Rank:</b>&nbsp;Excellent
+                </div>
+                <div>
+                    <b>Semester Status:</b>&nbsp;IN GOOD STANDING
+                </div>
+            </div>
+            
+
+        </div>
+
+    
+        
+        <div class="sem">
+        
+            <div class="sem-name" style="text-align: center;">
+                First Semester 2019-2020
+            </div>
+        
+            <div>
+                <div>
+		<table cellspacing="0" rules="all" border="1" id="ctl00_contentPH_ctl00_repSems_ctl05_grvCourses" style="width:100%;border-collapse:collapse;">
+			<tbody><tr>
+				<th scope="col">Line No</th><th scope="col">Symbol</th><th scope="col">Name</th><th scope="col">Credit Hours</th><th scope="col">Grade Weight</th><th scope="col">Grade Letter</th><th scope="col">Result</th>
+			</tr><tr>
+				<td>1712320</td><td>CPE232</td><td>Digital Logic Design Lab</td><td>1</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>821290</td><td>HSS129</td><td>General Skills</td><td>2</td><td> 4.20</td><td>A+</td><td>Pass</td>
+			</tr><tr>
+				<td>1753010</td><td>NES301</td><td>Probability And Queuing Theory</td><td>3</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>1732112</td><td>CS211</td><td>Data Structures</td><td>3</td><td> 4.20</td><td>A+</td><td>Pass</td>
+			</tr><tr>
+				<td>921072</td><td>PHY107</td><td>General Physics Laboratory (For Non-Physics Students)</td><td>1</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>242121</td><td>EE212</td><td>Electric  Circuit  Analysis</td><td>3</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>1712520</td><td>CPE252</td><td>Computer Organization And Design</td><td>3</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>821100</td><td>HSS110</td><td>Social Responsibility</td><td>3</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr>
+		</tbody></table>
+	</div>
+            </div>
+            
+            
+            
+            <div style="clear:both;"> </div>
+            <div id="ctl00_contentPH_ctl00_repSems_ctl05_weightDiv" class="sem-details">
+                <div>
+                    <b>Semester GPA:</b>&nbsp;4.05
+                </div>
+                <div>
+                    <b>Cumulative GPA:</b>&nbsp;3.95
+                </div>                    
+                <div>
+                    <b>GPA Rank:</b>&nbsp;Excellent
+                </div>
+                <div>
+                    <b>Semester Status:</b>&nbsp;HONOURED
+                </div>
+            </div>
+            
+
+        </div>
+
+    
+        
+        <div class="sem">
+        
+            <div class="sem-name" style="text-align: center;">
+                Second Semester 2019-2020
+            </div>
+        
+            <div>
+                <div>
+		<table cellspacing="0" rules="all" border="1" id="ctl00_contentPH_ctl00_repSems_ctl06_grvCourses" style="width:100%;border-collapse:collapse;">
+			<tbody><tr>
+				<th scope="col">Line No</th><th scope="col">Symbol</th><th scope="col">Name</th><th scope="col">Credit Hours</th><th scope="col">Grade Weight</th><th scope="col">Grade Letter</th><th scope="col">Result</th>
+			</tr><tr>
+				<td>802000</td><td>ARB200</td><td>Appreciation Of Literary Texts</td><td>3</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>242042</td><td>EE204</td><td>Introduction To Linear Systems</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Pass</td>
+			</tr><tr>
+				<td>242601</td><td>EE260</td><td>Signal And Systems Analysis</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Pass</td>
+			</tr><tr>
+				<td>1752020</td><td>NES202</td><td>Introduction To Unix</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Pass</td>
+			</tr><tr>
+				<td>1753110</td><td>NES311</td><td>Data  Communication</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Pass</td>
+			</tr>
+		</tbody></table>
+	</div>
+            </div>
+            
+            
+            
+            <div style="clear:both;"> </div>
+            <div id="ctl00_contentPH_ctl00_repSems_ctl06_weightDiv" class="sem-details">
+                <div>
+                    <b>Semester GPA:</b>&nbsp;4
+                </div>
+                <div>
+                    <b>Cumulative GPA:</b>&nbsp;3.95
+                </div>                    
+                <div>
+                    <b>GPA Rank:</b>&nbsp;Excellent
+                </div>
+                <div>
+                    <b>Semester Status:</b>&nbsp;IN GOOD STANDING
+                </div>
+            </div>
+            
+
+        </div>
+
+    
+        
+        <div class="sem">
+        
+            <div class="sem-name" style="text-align: center;">
+                Summer Semester 2019-2020
+            </div>
+        
+            <div>
+                <div>
+		<table cellspacing="0" rules="all" border="1" id="ctl00_contentPH_ctl00_repSems_ctl07_grvCourses" style="width:100%;border-collapse:collapse;">
+			<tbody><tr>
+				<th scope="col">Line No</th><th scope="col">Symbol</th><th scope="col">Name</th><th scope="col">Credit Hours</th><th scope="col">Grade Weight</th><th scope="col">Grade Letter</th><th scope="col">Result</th>
+			</tr><tr>
+				<td>902010</td><td>MATH201</td><td>Intermediate Analysis</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Pass</td>
+			</tr><tr>
+				<td>911031</td><td>CHEM103</td><td>General Chemistry</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Pass</td>
+			</tr><tr>
+				<td>841000</td><td>MS100</td><td>Military Sciences</td><td>3</td><td> 4.20</td><td>A+</td><td>Pass</td>
+			</tr><tr>
+				<td>1742010</td><td>CIs201</td><td>Introduction To Web Design</td><td>1</td><td> 3.75</td><td>A-</td><td>Pass</td>
+			</tr>
+		</tbody></table>
+	</div>
+            </div>
+            
+            
+            
+            <div style="clear:both;"> </div>
+            <div id="ctl00_contentPH_ctl00_repSems_ctl07_weightDiv" class="sem-details">
+                <div>
+                    <b>Semester GPA:</b>&nbsp;4.09
+                </div>
+                <div>
+                    <b>Cumulative GPA:</b>&nbsp;3.96
+                </div>                    
+                <div>
+                    <b>GPA Rank:</b>&nbsp;Excellent
+                </div>
+                <div>
+                    <b>Semester Status:</b>&nbsp;IN GOOD STANDING
+                </div>
+            </div>
+            
+
+        </div>
+
+    
+        
+        <div class="sem">
+        
+            <div class="sem-name" style="text-align: center;">
+                First Semester 2020-2021
+            </div>
+        
+            <div>
+                <div>
+		<table cellspacing="0" rules="all" border="1" id="ctl00_contentPH_ctl00_repSems_ctl08_grvCourses" style="width:100%;border-collapse:collapse;">
+			<tbody><tr>
+				<th scope="col">Line No</th><th scope="col">Symbol</th><th scope="col">Name</th><th scope="col">Credit Hours</th><th scope="col">Grade Weight</th><th scope="col">Grade Letter</th><th scope="col">Result</th>
+			</tr><tr>
+				<td>242130</td><td>EE213</td><td>Electrical Circuits Lab</td><td>1</td><td> 3.00</td><td>B-</td><td>Pass</td>
+			</tr><tr>
+				<td>622011</td><td>PP201</td><td>Beekeeping (For Non Plant Production Students)</td><td>3</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>1713520</td><td>CPE352</td><td>Computer  Architecture</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Pass</td>
+			</tr><tr>
+				<td>252150</td><td>ME215</td><td>Engineering Mechanics</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Pass</td>
+			</tr><tr>
+				<td>243213</td><td>EE321</td><td>Fundamentals Of Electronics (Non Ee Students)</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Pass</td>
+			</tr><tr>
+				<td>1742210</td><td>CIs221</td><td>Fundamentals Of Database Systems</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Pass</td>
+			</tr>
+		</tbody></table>
+	</div>
+            </div>
+            
+            
+            
+            <div style="clear:both;"> </div>
+            <div id="ctl00_contentPH_ctl00_repSems_ctl08_weightDiv" class="sem-details">
+                <div>
+                    <b>Semester GPA:</b>&nbsp;3.75
+                </div>
+                <div>
+                    <b>Cumulative GPA:</b>&nbsp;3.95
+                </div>                    
+                <div>
+                    <b>GPA Rank:</b>&nbsp;Excellent
+                </div>
+                <div>
+                    <b>Semester Status:</b>&nbsp;IN GOOD STANDING
+                </div>
+            </div>
+            
+
+        </div>
+
+    
+        
+        <div class="sem">
+        
+            <div class="sem-name" style="text-align: center;">
+                Second Semester 2020-2021
+            </div>
+        
+            <div>
+                <div>
+		<table cellspacing="0" rules="all" border="1" id="ctl00_contentPH_ctl00_repSems_ctl09_grvCourses" style="width:100%;border-collapse:collapse;">
+			<tbody><tr>
+				<th scope="col">Line No</th><th scope="col">Symbol</th><th scope="col">Name</th><th scope="col">Credit Hours</th><th scope="col">Grade Weight</th><th scope="col">Grade Letter</th><th scope="col">Result</th>
+			</tr><tr>
+				<td>252000</td><td>ME200</td><td>Engineering Drawing (A)</td><td>1</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>1714730</td><td>CPE473</td><td>Operating Systems</td><td>3</td><td> 3.75</td><td>A-</td><td>Pass</td>
+			</tr><tr>
+				<td>1753120</td><td>NES312</td><td>Fundamentals Of Computer Networks</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Pass</td>
+			</tr><tr>
+				<td>1742020</td><td>CIs202</td><td>Communication Skills</td><td>2</td><td> 4.00</td><td>A</td><td>Pass</td>
+			</tr><tr>
+				<td>1754510</td><td>NES451</td><td>Basics Of Information System Security</td><td>3</td><td> 3.75</td><td>A-</td><td>Pass</td>
+			</tr>
+		</tbody></table>
+	</div>
+            </div>
+            
+            
+            
+            <div style="clear:both;"> </div>
+            <div id="ctl00_contentPH_ctl00_repSems_ctl09_weightDiv" class="sem-details">
+                <div>
+                    <b>Semester GPA:</b>&nbsp;3.83
+                </div>
+                <div>
+                    <b>Cumulative GPA:</b>&nbsp;3.94
+                </div>                    
+                <div>
+                    <b>GPA Rank:</b>&nbsp;Excellent
+                </div>
+                <div>
+                    <b>Semester Status:</b>&nbsp;IN GOOD STANDING
+                </div>
+            </div>
+            
+
+        </div>
+
+    
+        
+        <div class="sem">
+        
+            <div class="sem-name" style="text-align: center;">
+                Summer Semester 2020-2021
+            </div>
+        
+            <div>
+                <div>
+		<table cellspacing="0" rules="all" border="1" id="ctl00_contentPH_ctl00_repSems_ctl10_grvCourses" style="width:100%;border-collapse:collapse;">
+			<tbody><tr>
+				<th scope="col">Line No</th><th scope="col">Symbol</th><th scope="col">Name</th><th scope="col">Credit Hours</th><th scope="col">Grade Weight</th><th scope="col">Grade Letter</th><th scope="col">Result</th>
+			</tr><tr>
+				<td>1713512</td><td>CPE351</td><td>Microprocessor  Systems</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Pass</td>
+			</tr><tr>
+				<td>1754150</td><td>NES415</td><td>Networking  Protocols</td><td>3</td><td>&nbsp;</td><td>&nbsp;</td><td>Pass</td>
+			</tr>
+		</tbody></table>
+	</div>
+            </div>
+            
+            
+            
+            <div style="clear:both;"> </div>
+            <div id="ctl00_contentPH_ctl00_repSems_ctl10_weightDiv" class="sem-details">
+                <div>
+                    <b>Semester GPA:</b>&nbsp;0
+                </div>
+                <div>
+                    <b>Cumulative GPA:</b>&nbsp;3.94
+                </div>                    
+                <div>
+                    <b>GPA Rank:</b>&nbsp;Excellent
+                </div>
+                <div>
+                    <b>Semester Status:</b>&nbsp;IN GOOD STANDING
+                </div>
+            </div>
+            
+
+        </div>
+
+    
+
+
+                        </td>
+                    </tr>
+                </tbody></table>
+            
+</div>
+        </fieldset>
+    </div>
+
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <div id="FooterDiv" class="Footer_En">
+                Jordan University of Science and Technology, All Rights Reserved ©
+                <span id="ctl00_lblServerIP" style="font-size:5pt;">1</span>
+            </div>
+
+            
+        </div>
+    </form>
+
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-draggable ui-resizable ui-dialog-buttons" tabindex="-1" role="dialog" aria-labelledby="ui-id-1" style="outline: 0px; z-index: 1000; position: absolute; top: 410px; left: 797px; display: none;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-id-1" class="ui-dialog-title">Message</span><a href="https://services.just.edu.jo/stuservices/student/reg/marks_en.aspx#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="globalDialog" style="direction: ltr;" class="ui-dialog-content ui-widget-content">
+                <span id="ctl00_lblGlobalDialogMessage"></span>
+            </div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1000;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1000;"></div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Ok</span></button></div></div></div></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
